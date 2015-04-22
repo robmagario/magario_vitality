@@ -5,5 +5,16 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+standard-app-packages
+less
+accounts-base
+email
+spiderable
+iron:router
+natestrauser:font-awesome
+matb33:collection-hooks
+perak:user-roles
+reactive-dict
+accounts-password
+alanning:roles
+nemo64:bootstrap
