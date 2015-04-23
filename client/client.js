@@ -8,6 +8,19 @@ Helpers.Veriables = {
     ScrollSpeed: 1000 // Scroll by 1 second
 };
 
+Helpers.Video = {
+    Load: function() {
+        console.log("Function Started");
+        $("header.video").wallpaper({
+            source: {
+                poster: "/img/bg-mobile-fallback.jpg",
+                mp4: "/mp4/camera.mp4"
+            }
+        });
+        console.log("Function Finished");
+    }
+};
+
 // User for show log while testing
 Helpers.Log = {
     active: true,
@@ -25,3 +38,4 @@ Helpers.helloworld = function() {
 _.each(Helpers, function (helper, key) {
     Handlebars.registerHelper(key, helper);
 });
+

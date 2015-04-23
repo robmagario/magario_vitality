@@ -16,6 +16,7 @@ if (Meteor.isClient) {
             this.next();
         }
     });*/
+    Router.route("video", {path: "/", controller: "VideoController"});
     Router.route("agency", {path: "/agency", controller: "AgencyController"});
     Router.route("creative", {path: "/creative", controller: "CreativeController"});
     Router.route("culinary", {path: "/culinary", controller: "CulinaryController"});
