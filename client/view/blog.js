@@ -1,10 +1,10 @@
 /**
  * Created by user on 4/22/2015.
  */
-Template.Video.rendered = function() {
+Template.Blog.rendered = function() {
     /*TEMPLATE_RENDERED_CODE*/
     // Nideo Settings
-    $("header.video").wallpaper({
+    $("header.blog").wallpaper({
         source: {
             poster: "/img/bg-mobile-fallback.jpg",
             mp4: "/mp4/camera.mp4"
@@ -63,8 +63,8 @@ Template.Video.rendered = function() {
         }
     });
 
-    // Formstone Wallpaper - Video Background Settings
-    $("header.video").wallpaper({
+    // Formstone Wallpaper - blog Background Settings
+    $("header.blog").wallpaper({
         source: {
             poster: "assets/img/bg-mobile-fallback.jpg",
             mp4: "assets/mp4/camera.mp4"
@@ -78,7 +78,7 @@ Template.Video.rendered = function() {
     })
 };
 
-Template.Video.events({
+Template.Blog.events({
     'click a.page-scroll': function(event) {
         Helpers.Log.Show("Click", "a.page-scroll");
         var tagname = event.target.innerText.toLowerCase();
@@ -129,7 +129,7 @@ Template.Video.events({
     }
 });
 
-Template.Video.helpers({
+Template.Blog.helpers({
 
 });
 
@@ -1824,10 +1824,10 @@ if (typeof Object.create !== "function") {
                 isTouch;
 
             tempElem.style.cssText = "  -moz-transform:" + translate3D +
-            "; -ms-transform:"     + translate3D +
-            "; -o-transform:"      + translate3D +
-            "; -webkit-transform:" + translate3D +
-            "; transform:"         + translate3D;
+                "; -ms-transform:"     + translate3D +
+                "; -o-transform:"      + translate3D +
+                "; -webkit-transform:" + translate3D +
+                "; transform:"         + translate3D;
             regex = /translate3d\(0px, 0px, 0px\)/g;
             asSupport = tempElem.style.cssText.match(regex);
             support3d = (asSupport !== null && asSupport.length !== 0);
@@ -2538,6 +2538,4 @@ if (typeof Object.create !== "function") {
         startDragging : false,
         afterLazyLoad: false
     };
-}(jQuery, window, document));/**
- * Created by abbeythorley on 28/4/15.
- */
+}(jQuery, window, document));
