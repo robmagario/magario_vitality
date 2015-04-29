@@ -23,10 +23,18 @@ if (Meteor.isClient) {
     Router.route("index", {path: "/index", controller: "IndexController"});
     Router.route("fashion", {path: "/fashion", controller: "FashionController"});
     Router.route("legal", {path: "/legal", controller: "LegalController"});
-    Router.route("blog", {path: "/blog", controller: "BlogController"});
 }
 
 Router.map(function () {
     //this.route("index", {path: "/", controller: "IndexController"});
 });
+
+
+// JavaScript
+if (Meteor.isServer) {
+    Blog.config({
+        adminRole: 'blogAdmin',
+        authorRole: 'blogAuthor'
+    });
+}
 
