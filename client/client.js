@@ -10,20 +10,18 @@ Helpers.Veriables = {
 
 Helpers.Video = {
     Load: function() {
-        console.log("Function Started");
         $("header.video").wallpaper({
             source: {
                 poster: "/img/bg-mobile-fallback.jpg",
                 mp4: "/mp4/camera.mp4"
             }
         });
-        console.log("Function Finished");
     }
 };
 
 // User for show log while testing
 Helpers.Log = {
-    active: true,
+    active: false,
     Show: function(header, message) {
         if(Helpers.Log.active) {
             console.log("[" + header + "]: " + message);

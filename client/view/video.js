@@ -76,7 +76,27 @@ Template.Video.rendered = function() {
         target: '.navbar-fixed-top',
         offset: 51
     })
+
+    // Activates floating label headings for the contact form.
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+        $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+        $(this).removeClass("floating-label-form-group-with-focus");
+    });
 };
+
+function ActiveNavbarHeaderBackground(_index) {
+    var _length = $('.navbar-collapse').find('.navbar-nav').find('li').length;
+    for(var i=0; i<_length; i++) {
+        if(i != _index) {
+            $('.navbar-collapse').find('.navbar-nav').find('li').eq(i).removeClass('active');
+        } else {
+            $('.navbar-collapse').find('.navbar-nav').find('li').eq(_index).addClass('active');
+        }
+    }
+}
 
 Template.Video.events({
     'click a.page-scroll': function(event) {
@@ -91,6 +111,27 @@ Template.Video.events({
         $('body').animate({scrollTop:targetY}, Helpers.Veriables.ScrollSpeed);
     },
 
+    'click .click-page-top': function() {
+        ActiveNavbarHeaderBackground(0);
+    },
+    'click .click-about': function() {
+        ActiveNavbarHeaderBackground(1);
+    },
+    'click .click-services': function() {
+        ActiveNavbarHeaderBackground(2);
+    },
+    'click .click-clients': function() {
+        ActiveNavbarHeaderBackground(3);
+    },
+    'click .click-pricing': function() {
+        ActiveNavbarHeaderBackground(4);
+    },
+    'click .click-blog': function() {
+    },
+    'click .click-contact': function() {
+        ActiveNavbarHeaderBackground(6);
+    }
+/*
     'mouseenter header': function() {
         $('.navbar-inverse').addClass('navbar-expanded');
     },
@@ -126,7 +167,7 @@ Template.Video.events({
     },
     'mouseleave #contact': function() {
         $('.focus-contact').removeClass('active');
-    }
+    }*/
 });
 
 Template.Video.helpers({
