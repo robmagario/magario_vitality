@@ -1,0 +1,143 @@
+{
+  // Navbar Menu
+  "navbar_about":     "關於",
+  "navbar_services":  "服務",
+  "navbar_clients":   "客戶",
+  "navbar_pricing":   "價格",
+  "navbar_blog":      "Blog",
+  "navbar_contact":   "聯絡",
+
+  // Brand Name Subtext
+  "BrandNameSubtext": "網頁設計及網絡營銷專員",
+
+  // About Content
+  "about_header":         "為任何人制定網頁的服務",
+  "about_header_subtext": "Magario International是一家總部位於香港的網絡顧問公司。<br>我們從個人博客到企業數據庫，也會創造時尚和美麗的網站，並將其發送到世界各地。",
+  "about_subheader1":     "國際",
+  "about_subtext1":       "以滿足國際客戶的需求，我們有國際工作人員。多語種服務，多幣種的網站。",
+  "about_subheader2":     "網絡營銷",
+  "about_subtext2":       "我們使用最新的技術來介紹你的網站給新受眾。從搜索引擎優化技術至社會化媒體的插件和Adwords，我們也會做。",
+  "about_subheader3":     "移動設備",
+  "about_subtext3":       "我們從台式機過渡到移動設備，做出網絡應用程序。在一個全新的平台重新找到你的受眾。",
+  "about_subheader4":     "特別關注",
+  "about_subtext4":       "我們在工作的時間內只有極少數的項目，以確保我們的客戶得到我們的充分重視。在一個有效的時間框架內創造項目特定的網站。",
+
+  // Our Team Content
+  "ourteam_header":         "我們的團隊",
+  "ourteam_header_subtext": "我們是一群友好和堅定的設計師，營銷專家和電腦工程師。我們之間有大量人才。",
+  "ourteam_img1_name":      "Robson Hayashida",
+  "ourteam_img1_pos":       "技術總監",
+  "ourteam_img2_name":      "Todd Katsuyama",
+  "ourteam_img2_pos":       "行政總裁",
+  "ourteam_img3_name":      "Abbey Thorley",
+  "ourteam_img3_pos":       "電子商務副主席",
+  "ourteam_img4_name":      "Hemant Sureshkumar",
+  "ourteam_img4_pos":       "軟件工程師",
+  "ourteam_img5_name":      "Dave Ng",
+  "ourteam_img5_pos":       "軟件工程師",
+
+  // Work with us Content
+  "work_brand_text":  "<span class='quote'>“What separates <span class='text-primary'>design</span> from <span class='text-primary'>art</span> is that design is meant to be… <span class='text-primary'>functional</span>.”<br><br>― 卡梅隆莫爾</span>",
+  "work_button":      "與我們合作",
+
+  // Services Content
+  "services_header":            "過程",
+  "services_header_subtext":    "下面是我們如何對待我們的每一個項目的概況。",
+  "services_subtitle1_header":  "徵詢",
+  "services_subtitle1_point":   "<li>免費的客戶諮詢</li><li>制定項目策略</li><li>找准時間限制</li><li>research</li>",
+  "servives_subtitle2_header":  "建立",
+  "services_subtitle2_point":   "<li>主辦與設計網站</li><li>技術和疑難解答</li><li>客戶的反饋意見</li><li>創建網絡營銷</li>",
+  "services_subtitle3_header":  "發布",
+  "services_subtitle3_point":   "<li>配置網站</li><li>市場的產品發布</li><li>收集UX數據</li><li>季度維護</li>",
+
+  // Clients Content
+  "clients_header":         "客戶",
+  "clients_header_subtext": "下面是一些我們為客戶製作網站的小樣本。",
+  "clients_project1_name":  "Living Alive PR",
+  "clients_project1_des":   "跨平台網站設計和搜索引擎優化營銷",
+  "clients_project2_name":  "Tanner DeWitt Solicitors",
+  "clients_project2_des":   "品牌推廣，網頁設計和網絡營銷",
+  "clients_project3_name":  "Amaranto",
+  "clients_project3_des":   "品牌推廣，網頁設計，Google Adwords",
+  "clients_project4_name":  "Red Doors Studio",
+  "clients_project4_des":   "網站管理與設計",
+  "clients_detail_button":  "查閱資料",
+
+  // Portfolio Content
+  "portfolio_header":         "Portfolio",
+  "portfolio_header_subtext": "下面是一些我們的其他項目。",
+  "portfolio_selection1":     "全部",
+  "portfolio_selection2":     "個人",
+  "portfolio_selection3":     "商業",
+  "portfolio_selection4":     "企業",
+  // Image Name
+  "portfolio_img1":   "Amaranto",
+  "portfolio_img2":   "Living Alive PR",
+  "portfolio_img3":   "Tanner De Witt",
+  "portfolio_img4":   "Red Doors Studio",
+  "portfolio_img5":   "Stork",
+  "portfolio_img6":   "Mauve",
+  "portfolio_img7":   "Hayashida Acupunctura",
+  "portfolio_img8":   "Dance With Style",
+  "portfolio_img9":   "Taobao Agente Style",
+  "portfolio_img10":  "OneRepublic",
+  "portfolio_img11":  "Postable",
+  "portfolio_img12":  "Simpli Nota",
+  // Type
+  "portfolio_type1":  "品牌識別",
+  "portfolio_type2":  "網站開發",
+  "portfolio_type3":  "海報設計",
+  "portfolio_type4":  "圖文設計",
+  "portfolio_type5":  "手機應用程序",
+  "portfolio_type6":  "搜索引擎優化和網絡營銷",
+
+  // Saying Content
+  "saying_item1_lead":  "從Magario的伙計們接受的服務水平，令我有很深刻的印象。",
+  "saying_item1_qoute": "他們不僅做了一切，並且使用了比原先估計的時間更短的時間。他們在我們的網站修改了一些並且不收取額外費用。我們注意到我們的排名大幅提升在短短幾天。他們的服務是很好，超出了我的預期",
+  "saying_item1_name":  "Renata Guiotti",
+  "saying_item1_pos":   "Director at Brazilian Association of Hong Kong",
+  "saying_item2_lead":  "It has been a pleasure working with Magario over the past several years.",
+  "saying_item2_qoute": "During this time we have seen significant improvement in our organic rankings including a move from the 10th page to the 1st page position for our primary target “salsa classes hong kong”.",
+  "saying_item2_name":  "Javed Rasool",
+  "saying_item2_pos":   "CEO of Dance With Style and Imagine8",
+
+  // Pricing Content
+  "pricing_header":           "價格",
+  "pricing_header_subtext":   "誠實的價格。專業服務。當地匯率。",
+  "pricing_subtitle1_header": "網絡營銷",
+  "pricing_subtitle1_price":  "<span class='number'><sup></sup>30%</span> / 計劃",
+  "pricing_subtitle1_item":   "<li class='list-group-item''>無限的推廣</li><li class='list-group-item'>以英語為母語來檢閱</li><li class='list-group-item'>文字和圖像內容</li><li class='list-group-item'>Google & Facebook<strong>最高排名</strong></li><li class='list-group-item'>電腦和手機廣告</li><li class='list-group-item'>時事通訊支持</li>",
+  "pricing_subtitle2_header": "網頁設計",
+  "pricing_subtitle2_price":  "<span class='number'><sup>$</sup>1500</span> / 小時",
+  "pricing_subtitle2_item":   "<li class='list-group-item'>時尚，美觀的設計</li><li class='list-group-item'><strong>電腦和手機</strong>網絡應用程序</li><li class='list-group-item'>為每個客戶定制的設計</li><li class='list-group-item'>多國語言及貨幣</li><li class='list-group-item'>電子商務支援</li><li class='list-group-item'>開放代碼以方便編輯</li>",
+  "pricing_subtitle3_header": "媒體製作",
+  "pricing_subtitle3_price":  "<span class='number'><sup>$</sup>4000</span> / 小時",
+  "pricing_subtitle3_item":   "<li class='list-group-item'>專業視頻設備</li><li class='list-group-item'>最後的剪輯系統</li><li class='list-group-item'>編排與設計</li><li class='list-group-item'>YouTube的市場營銷</li><li class='list-group-item'>海報，傳單，標誌</li><li class='list-group-item'><strong>免費諮詢</strong></li>",
+  "pricing_signup_button":    "註冊",
+
+  // Subscribe Content
+  "subscribe_header": "訂閱我們的通訊",
+  "subscribe_button": "訂閱!",
+
+  // Contact Us Content
+  "contact_header":         "與我們聯繫",
+  "contact_header_subtext": "請告訴我們您的下一個項目，我們會讓你知道我們能做些什麼來幫助你。",
+  // Send
+  "contact_name":         "姓名",
+  "contact_email":        "電子郵件地址",
+  "contact_phone":        "電話號碼",
+  "contact_message":      "信息",
+  "contact_send_button":  "發送",
+  // Facebook
+  "contact_facebook": "在Facebook上檢查我們！",
+  // Sub Title
+  "contact_subtitle1_header":   "通話",
+  "contact_subtitle1_text":     "+852 6818 3401",
+  "contact_subtitle2_header":   "訪問",
+  "contact_subtitle2_text":     "The Good Lab, L1<br>500 通州街<br>長沙灣, 九龍, 香港特區",
+  "contact_subtitle3_header":   "電子郵件地址",
+  "contact_subtitle3_text":     "info@magario.com",
+
+  // Copyright
+  "copyright_text": "&copy; 2008-2015 Magario International Company Limited. All rights reserved."
+}

@@ -3,7 +3,6 @@
  */
 this.App = {};
 this.Helpers = {};
-
 Helpers.Veriables = {
     ScrollSpeed: 1000 // Scroll by 1 second
 };

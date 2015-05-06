@@ -135,6 +135,9 @@ Template.Video.rendered = function() {
     };
 
     filterList.init();
+
+
+    TAPi18n.setLanguage('en');
 };
 
 function ActiveNavbarHeaderBackground(_index) {
@@ -146,6 +149,15 @@ function ActiveNavbarHeaderBackground(_index) {
             $('.navbar-collapse').find('.navbar-nav').find('li').eq(_index).addClass('active');
         }
     }
+}
+
+function ChangeLanguage(_language) {
+    if(_language == 'en') {
+        //location.href('/');
+    } else {
+        //location.href(_language);
+    }
+    TAPi18n.setLanguage(_language);
 }
 
 Template.Video.events({
@@ -180,6 +192,30 @@ Template.Video.events({
     },
     'click .click-contact': function() {
         ActiveNavbarHeaderBackground(6);
+    },
+
+    'click .submit-contact-us': function() {
+        var _name = $('#contact_name').val();
+        var _email = $('#contact_email').val();
+        var _phone = $('#contact_phone').val();
+        var _message = $('#contact_message').val();
+        $('#contact_name').val("");
+        $('#contact_email').val("");
+        $('#contact_phone').val("");
+        $('#contact_message').val("");
+    },
+
+    'click .language_en': function() {
+        ChangeLanguage('en');
+    },
+    'click .language_jp': function() {
+        ChangeLanguage('jp');
+    },
+    'click .language_zh': function() {
+        ChangeLanguage('zh');
+    },
+    'click .language_br': function() {
+        ChangeLanguage('br');
     }
 /*
     'mouseenter header': function() {
@@ -222,4 +258,4 @@ Template.Video.events({
 
 Template.Video.helpers({
 
-});x
+});

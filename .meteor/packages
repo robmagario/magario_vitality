@@ -22,3 +22,5 @@ alanning:roles
 accounts-password
 accounts-ui
 
+anti:i18n
+tap:i18n
