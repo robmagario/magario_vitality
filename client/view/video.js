@@ -163,14 +163,17 @@ function ChangeLanguage(_language) {
 Template.Video.events({
     'click a.page-scroll': function(event) {
         Helpers.Log.Show("Click", "a.page-scroll");
-        var tagname = event.target.innerText.toLowerCase();
-        var targetY = 0;
-        if(tagname != null && tagname != "") {
-            targetY = $('#'+tagname).offset().top;
-        } else if(event.target.localName == "i") {
-            targetY = $('#about').offset().top;
+        var _tag = event.target.hash.split('#');
+        if(_tag.length > 1) {
+            var tagname = _tag[1].toLowerCase();
+            var targetY = 0;
+            if (tagname != null && tagname != "") {
+                targetY = $('#' + tagname).offset().top;
+            } else if (event.target.localName == "i") {
+                targetY = $('#about').offset().top;
+            }
+            $('body').animate({scrollTop: targetY}, Helpers.Veriables.ScrollSpeed);
         }
-        $('body').animate({scrollTop:targetY}, Helpers.Veriables.ScrollSpeed);
     },
 
     'click .click-page-top': function() {

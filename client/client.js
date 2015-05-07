@@ -28,8 +28,7 @@ Helpers.Log = {
     }
 };
 
-Helpers.ChangeLanguage = function() {
-    var _language = $('.language_select').val();
+Helpers.ChangeLanguage = function(_language) {
     TAPi18n.setLanguage(_language);
 }
 

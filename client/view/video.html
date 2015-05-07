@@ -79,30 +79,14 @@
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Language<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li value="en">English</li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                        <ul class="dropdown-menu language_select" role="menu">
+                            <li><a style="color:black;" href="#" onclick="Helpers.ChangeLanguage('en')">English</a></li>
+                            <li><a style="color:black;" href="#" onclick="Helpers.ChangeLanguage('jp')">Japanese</a></li>
+                            <li><a style="color:black;" href="#" onclick="Helpers.ChangeLanguage('zh')">Chinese(T)</a></li>
+                            <li><a style="color:black;" href="#" onclick="Helpers.ChangeLanguage('br')">Portuguese</a></li>
 
                         </ul>
                     </li>
-                    <li>
-                        <!-- Select Language (EN, JP, ZH, BR) -->
-                        <div style="right:50%; display:flex; display:-webkit-flex;">
-                            <div style="color:#ffffff">Language</div>
-                            <select class="language_select" onchange="Helpers.ChangeLanguage()">
-                                <option value="en">English</option>
-                                <option value="jp">Japanese</option>
-                                <option value="zh">Chinese(T)</option>
-                                <option value="br">Portuguese</option>
-                            </select>
-                        </div>
-                    </li>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -602,8 +586,8 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="testimonials-carousel">
-                        <div class="item" style="width:66.66%">
-                            <div class="row">
+                        <div class="item">
+                            <div class="row" style="width:63.75%">
                                 <div class="col-lg-12">
                                     <p class="lead">"{{_ "saying_item1_lead"}}"</p>
                                     <hr class="colored">
@@ -627,8 +611,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item" style="width:66.66%">
-                            <div class="row">
+                        <div class="item">
+                            <div class="row" style="width:63.75%">
                                 <div class="col-lg-12">
                                     <p class="lead">“{{_ "saying_item2_lead"}}"</p>
                                     <hr class="colored">
@@ -837,21 +821,16 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/magario/AmarantoLogowhite_opt.png" class="img-responsive img-centered" alt="">
                             <hr class="colored">
-                            <p>Amaranto came to us with their company website.</p>
+                            <p>{{_ "Amaranto_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Amaranto Ltd</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">September 2014-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">SEM (Adwords), SEO, Site Maintenence, CSS</a></strong>
-                                </li>
+                                {{{_ "Amaranto_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -873,21 +852,16 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/magario/LivingAlivePR Logo_opt.png" class="img-responsive img-centered" alt="">
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "LivingAlivePR_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Living Alive PR</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">November 2014-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, SEO</a></strong>
-                                </li>
+                                {{{_ "LivingAlivePR_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -908,23 +882,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
-                            <h2>Andy Willner, Pure Yoga</h2>
+                            <h2>{{_ "PureYoga_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "PureYoga_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Andy Willner, Yoga Instructor at Pure Yoga</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Javascript Consultation, Specialized Algorithms for Social Media Marketing</a></strong>
-                                </li>
+                                {{{_ "PureYoga_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -945,23 +914,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Tanner De Witt Solicitors</h2>
+                            <h2>{{_ "TannerDeWitt_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "TannerDeWitt_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Tanner De Witt Solicitors</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">March 2014-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, Maintenance, SEO</a></strong>
-                                </li>
+                                {{{_ "TannerDeWitt_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -981,23 +945,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Red Doors Studio</h2>
+                            <h2>{{_ "RedDoorsStudio_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "RedDoorsStodio_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Red Doors Studio</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">February 2015-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design</a></strong>
-                                </li>
+                                {{{_ "RedDoorsStudio_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1017,23 +976,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>We Are Living Alie</h2>
+                            <h2>{{_ "WeAreLivingAlie_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "WeAreLivingAlie_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">We Are Living Alive</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">August 2014-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, Maintenance</a></strong>
-                                </li>
+                                {{{_ "WeAreLivingAlie_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1053,23 +1007,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Stork</h2>
+                            <h2>{{_ "Stork_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "Stork_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Stork</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, Maintenance, SEO</a></strong>
-                                </li>
+                                {{{_ "Stork_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1089,23 +1038,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Hayashida Acupunctura</h2>
+                            <h2>{{_ "HayashidaAcupunctura_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "HayashidaAcupunctura_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Hayashida Acupunctura</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">May 2014-July 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, SEO, Automated eNewsletter</a></strong>
-                                </li>
+                                {{{_ "HayashidaAcupunctura_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1125,23 +1069,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Dance Wtih Style</h2>
+                            <h2>{{_ "DanceWtihStyle_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "DanceWtihStyle_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Dance With Style</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">January 2013-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, Web Hosting, Mailchimp, SEO, SEM (Adwords), Flyers & Promotional Material</a></strong>
-                                </li>
+                                {{{_ "DanceWtihStyle_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1161,23 +1100,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Mauve</h2>
+                            <h2>{{_ "Mauve_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "Mauve_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Mauve</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design</a></strong>
-                                </li>
+                                {{{_ "Mauve_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1197,23 +1131,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Taobao Agent Style</h2>
+                            <h2>{{_ "TaobaoAgentStyle_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "TaobaoAgentStyle_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Taobao Agent Style</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">July 2013-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">SEM, SEO (Adwords), Web Design, Web Hosting, Mailchimp</a></strong>
-                                </li>
+                                {{{_ "TaobaoAgentStyle_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>
@@ -1233,23 +1162,18 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>GWG Holdings</h2>
+                            <h2>{{_ "GWGHoldings_name"}}</h2>
                             <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                            <p>{{_ "GWGHoldings_subtext"}}</p>
                         </div>
                         <div class="col-lg-12">
                             <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">GWG Holdings</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">July 2013-Present</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Design, Web Hosting, Flyers & Promotional Material</a></strong>
-                                </li>
+                                {{{_ "GWGHoldings_list"}}}
                             </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{_ "button_close"}}</button>
                         </div>
                     </div>
                 </div>

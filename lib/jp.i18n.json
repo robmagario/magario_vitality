@@ -1,14 +1,14 @@
 {
   // Navbar Menu
-  "navbar_about":     "About",
-  "navbar_services":  "Services",
-  "navbar_clients":   "Clients",
-  "navbar_pricing":   "Pricing",
-  "navbar_blog":      "Blog",
-  "navbar_contact":   "Contact",
+  "navbar_about":     "に関する",
+  "navbar_services":  "サービス",
+  "navbar_clients":   "クライアント",
+  "navbar_pricing":   "プライシング",
+  "navbar_blog":      "ブログ",
+  "navbar_contact":   "コンタクト",
 
   // Brand Name Subtext
-  "BrandName":        "Magario",
+  "BrandName":        "マガリオ",
   "BrandNameSubtext": "Web Design & eMarketing Specialists",
 
   // About Content
@@ -145,5 +145,66 @@
   "contact_subtitle3_text":     "info@magario.com",
 
   // Copyright
-  "copyright_text": "&copy; 2008-2015 Magario International Company Limited. All rights reserved."
+  "copyright_text": "&copy; 2008-2015 Magario International Company Limited. All rights reserved.",
+
+  // Amaranto Detail
+  "Amaranto_subtext": "Amaranto came to us with their company website.",
+  "Amaranto_list": "<li>Client: <strong><a href=''>Amaranto Ltd</a></strong></li><li>Date: <strong><a href=''>September 2014-Present</a></strong></li><li>Service: <strong><a href=''>SEM (Adwords), SEO, Site Maintenence, CSS</a></strong></li>",
+
+  // Living Alive PR Detail
+  "LivingAlivePR_subtext":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "LivingAlivePR_list":     "<li>Client: <strong><a href=''>Living Alive PR</a></strong></li><li>Date: <strong><a href=''>November 2014-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, SEO</a></strong></li>",
+
+  // Andy Willner, Pure Yoga Detail
+  "PureYoga_name":    "Andy Willner, Pure Yoga",
+  "PureYoga_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "PureYoga_list":    "<li>Client: <strong><a href=''>Andy Willner, Yoga Instructor at Pure Yoga</a></strong></li><li>Date: <strong><a href=''>April 2015</a></strong></li><li>Service: <strong><a href=''>Javascript Consultation, Specialized Algorithms for Social Media Marketing</a></strong></li>",
+
+  // Tanner De Witt Solicitors Detail
+  "TannerDeWitt_name":    "Tanner De Witt Solicitors",
+  "TannerDeWitt_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "TannerDeWitt_list":    "<li>Client: <strong><a href=''>Tanner De Witt Solicitors</a></strong></li><li>Date: <strong><a href=''>March 2014-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Maintenance, SEO</a></strong></li>",
+
+  // Red Doors Studio Detail
+  "RedDoorsStudio_name":    "Red Doors Studio",
+  "RedDoorsStodio_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "RedDoorsStudio_list":    "<li>Client: <strong><a href='http://startbootstrap.com'>Red Doors Studio</a></strong></li><li>Date: <strong><a href='http://startbootstrap.com'>February 2015-Present</a></strong></li><li>Service: <strong><a href='http://startbootstrap.com'>Web Design</a></strong></li>",
+
+  // We Are Living Alie Detail
+  "WeAreLivingAlie_name":     "We Are Living Alie",
+  "WeAreLivingAlie_subtext":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "WeAreLivingAlie_list":     "<li>Client: <strong><a href=''>We Are Living Alive</a></strong></li><li>Date: <strong><a href=''>August 2014-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Maintenance</a></strong></li>",
+
+  // Stork Detail
+  "Stork_name":     "Stork",
+  "Stork_subtext":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "Stork_list":     "<li>Client: <strong><a href=''>Stork</a></strong></li><li>Date: <strong><a href=''>April 2015-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Maintenance, SEO</a></strong></li>",
+
+  // Hayashida Acupunctura Detail
+  "HayashidaAcupunctura_name":    "Hayashida Acupunctura",
+  "HayashidaAcupunctura_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "HayashidaAcupunctura_list":    "<li>Client: <strong><a href=''>Hayashida Acupunctura</a></strong></li><li>Date: <strong><a href=''>May 2014-July 2014</a></strong></li><li>Service: <strong><a href=''>Web Design, SEO, Automated eNewsletter</a></strong></li>",
+
+  // Dance Wtih Style Detail
+  "DanceWtihStyle_name":    "Dance Wtih Style",
+  "DanceWtihStyle_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "DanceWtihStyle_list":    "<li>Client: <strong><a href=''>Dance With Style</a></strong></li><li>Date: <strong><a href=''>January 2013-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Web Hosting, Mailchimp, SEO, SEM (Adwords), Flyers & Promotional Material</a></strong></li>",
+
+  // Mauve Detail
+  "Mauve_name":     "Mauve",
+  "Mauve_subtext":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "Mauve_list":     "<li>Client: <strong><a href=''>Mauve</a></strong></li><li>Date: <strong><a href=''>April 2015-Present</a></strong></li><li>Service: <strong><a href=''>Web Design</a></strong></li>",
+
+  // Taobao Agent Style Detail
+  "TaobaoAgentStyle_name":    "Taobao Agent Style",
+  "TaobaoAgentStyle_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "TaobaoAgentStyle_list":    "Taobao Agent Style",
+
+  // GWG Holdings Detail
+  "GWGHoldings_name":     "GWG Holdings",
+  "GWGHoldings_subtext":  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "GWGHoldings_list":     "<li>Client: <strong><a href=''>GWG Holdings</a></strong></li><li>Date: <strong><a href=''>July 2013-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Web Hosting, Flyers & Promotional Material</a></strong></li>",
+
+  // Other Buttons
+  "button_close": "Close"
 }

@@ -11,7 +11,7 @@ this.VideoController = RouteController.extend({
 	},
 
 	action: function() {
-		if(this.isReady()) { this.render(); } else { this.render("Legal"); }
+		if(this.isReady()) { this.render(); } else { this.render("Video"); }
 		/*ACTION_FUNCTION*/
 	},
 
