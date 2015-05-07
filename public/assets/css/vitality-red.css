@@ -248,6 +248,11 @@ hr.colored {
   .navbar-fixed-top .navbar-brand:hover {
     opacity: 0.5;
   }
+  .navbar-default.navbar-expanded,
+  .navbar-inverse.navbar-expanded {
+    background: transparent;
+    border: none;
+  }
 }
 .navbar a:focus {
   outline: none;

@@ -9,8 +9,8 @@
   "navbar_language":  "言語",
 
   // Laguage Selection
-  "language_en":  "English",
-  "language_jp":  "Japanese",
+  "language_en":  "英語",
+  "language_jp":  "日本語",
   "language_zh":  "Chinese(T)",
   "language_cn":  "Chinese(S)",
   "language_br":  "Portuguese",
