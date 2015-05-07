@@ -6,7 +6,14 @@
   "navbar_pricing":   "價格",
   "navbar_blog":      "Blog",
   "navbar_contact":   "聯絡",
-  "navbar_language":  "語言"
+  "navbar_language":  "語言",
+
+  // Laguage Selection
+  "language_en":  "英文",
+  "language_jp":  "日文",
+  "language_zh":  "中文(繁)",
+  "language_cn":  "中文(簡)",
+  "language_br":  "葡萄牙語",
 
   // Brand Name Subtext
   "BrandName":        "Magario",
