@@ -32,6 +32,10 @@ Helpers.ChangeLanguage = function(_language) {
     TAPi18n.setLanguage(_language);
 }
 
+Helpers.ChangeNavbarBackground = function() {
+    console.log(window.pageYOffset);
+}
+
 Helpers.helloworld = function() {
     return "Hello World";
 };

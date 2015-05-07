@@ -6,6 +6,14 @@
   "navbar_pricing":   "プライシング",
   "navbar_blog":      "ブログ",
   "navbar_contact":   "コンタクト",
+  "navbar_language":  "言語",
+
+  // Laguage Selection
+  "language_en":  "English",
+  "language_jp":  "Japanese",
+  "language_zh":  "Chinese(T)",
+  "language_cn":  "Chinese(S)",
+  "language_br":  "Portuguese",
 
   // Brand Name Subtext
   "BrandName":        "マガリオ",

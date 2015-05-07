@@ -129,16 +129,14 @@ Template.Video.rendered = function() {
                     }, 300, 'easeOutQuad');
                 }
             );
-
         }
-
     };
 
     filterList.init();
 
-
     TAPi18n.setLanguage('en');
 };
+
 
 function ActiveNavbarHeaderBackground(_index) {
     var _length = $('.navbar-collapse').find('.navbar-nav').find('li').length;
@@ -220,43 +218,6 @@ Template.Video.events({
     'click .language_br': function() {
         ChangeLanguage('br');
     }
-/*
-    'mouseenter header': function() {
-        $('.navbar-inverse').addClass('navbar-expanded');
-    },
-    'mouseleave header': function() {
-        $('.navbar-inverse').removeClass('navbar-expanded');
-    },
-    'mouseenter #about': function() {
-        $('.focus-about').addClass('active');
-    },
-    'mouseleave #about': function() {
-        $('.focus-about').removeClass('active');
-    },
-    'mouseenter #process': function() {
-        $('.focus-process').addClass('active');
-    },
-    'mouseleave #process': function() {
-        $('.focus-process').removeClass('active');
-    },
-    'mouseenter #work': function() {
-        $('.focus-work').addClass('active');
-    },
-    'mouseleave #work': function() {
-        $('.focus-work').removeClass('active');
-    },
-    'mouseenter #pricing': function() {
-        $('.focus-pricing').addClass('active');
-    },
-    'mouseleave #pricing': function() {
-        $('.focus-pricing').removeClass('active');
-    },
-    'mouseenter #contact': function() {
-        $('.focus-contact').addClass('active');
-    },
-    'mouseleave #contact': function() {
-        $('.focus-contact').removeClass('active');
-    }*/
 });
 
 Template.Video.helpers({
