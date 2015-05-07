@@ -6,22 +6,23 @@
   "navbar_pricing":   "價格",
   "navbar_blog":      "Blog",
   "navbar_contact":   "聯絡",
+  "navbar_language":  "語言"
 
   // Brand Name Subtext
   "BrandName":        "Magario",
-  "BrandNameSubtext": "網頁設計及網絡營銷專員",
+  "BrandNameSubtext": "數字化諮詢專員",
 
   // About Content
-  "about_header":         "為任何人制定網頁的服務",
-  "about_header_subtext": "Magario International是一家總部位於香港的網絡顧問公司。<br>我們從個人博客到企業數據庫，也會創造時尚和美麗的網站，並將其發送到世界各地。",
-  "about_subheader1":     "國際",
-  "about_subtext1":       "以滿足國際客戶的需求，我們有國際工作人員。多語種服務，多幣種的網站。",
-  "about_subheader2":     "網絡營銷",
-  "about_subtext2":       "我們使用最新的技術來介紹你的網站給新受眾。從搜索引擎優化技術至社會化媒體的插件和Adwords，我們也會做。",
-  "about_subheader3":     "移動設備",
-  "about_subtext3":       "我們從台式機過渡到移動設備，做出網絡應用程序。在一個全新的平台重新找到你的受眾。",
+  "about_header":         "為任何人設計網絡的服務",
+  "about_header_subtext": "Magario International是一家總部位於香港的網絡顧問公司。<br>無論是博客還是企業數據庫，我們也會為你創造時尚和美麗的網站，並將其發送到世界各地。",
+  "about_subheader1":     "國際化",
+  "about_subtext1":       "我們有不同國籍的工作人員，滿足國際客戶的需求。多語種服務，多幣種的網站。",
+  "about_subheader2":     "数字化战略",
+  "about_subtext2":       "我們提供專門的網絡解決方案，將你的網站介紹給新受眾。社會媒體、專門設計電子插件、SEO、Adwords SEM，我們也能幫到你。",
+  "about_subheader3":     "流動平台",
+  "about_subtext3":       "我們的設計的軟件和網站可以從台式機過渡到流動設備，做出網絡應用程序。在一個全新的平台重新找到你的受眾。",
   "about_subheader4":     "特別關注",
-  "about_subtext4":       "我們在工作的時間內只有極少數的項目，以確保我們的客戶得到我們的充分重視。在一個有效的時間框架內創造項目特定的網站。",
+  "about_subtext4":       "我們盡量限制短時間內擔當的Project，以確保我們的客戶得到我們的充分重視。",
 
   // Our Team Content
   "ourteam_header":         "我們的團隊",
