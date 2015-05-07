@@ -28,6 +28,11 @@ Helpers.Log = {
     }
 };
 
+Helpers.ChangeLanguage = function() {
+    var _language = $('.language_select').val();
+    TAPi18n.setLanguage(_language);
+}
+
 Helpers.helloworld = function() {
     return "Hello World";
 };

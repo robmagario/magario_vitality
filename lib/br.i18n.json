@@ -8,6 +8,7 @@
   "navbar_contact":   "Contact",
 
   // Brand Name Subtext
+  "BrandName":        "Magario",
   "BrandNameSubtext": "Web Design & eMarketing Specialists",
 
   // About Content
@@ -73,23 +74,28 @@
   // Image Name
   "portfolio_img1":   "Amaranto",
   "portfolio_img2":   "Living Alive PR",
-  "portfolio_img3":   "Tanner De Witt",
-  "portfolio_img4":   "Red Doors Studio",
-  "portfolio_img5":   "Stork",
-  "portfolio_img6":   "Mauve",
-  "portfolio_img7":   "Hayashida Acupunctura",
-  "portfolio_img8":   "Dance With Style",
-  "portfolio_img9":   "Taobao Agente Style",
-  "portfolio_img10":  "OneRepublic",
-  "portfolio_img11":  "Postable",
-  "portfolio_img12":  "Simpli Nota",
+  "portfolio_img3":   "Andy Willner, Pure Yoga",
+  "portfolio_img4":   "Tanner De Wit",
+  "portfolio_img5":   "Red Doors Studio",
+  "portfolio_img6":   "We Are Living Alive",
+  "portfolio_img7":   "Stork",
+  "portfolio_img8":   "Hayashida Acupunctura",
+  "portfolio_img9":   "Dance With Style",
+  "portfolio_img10":  "Mauve",
+  "portfolio_img11":  "Taobao Agente Style",
+  "portfolio_img12":  "GWG Holdings",
   // Type
-  "portfolio_type1":  "Brand Identity",
-  "portfolio_type2":  "Web Development",
-  "portfolio_type3":  "Poster Design",
-  "portfolio_type4":  "Graphic Design",
-  "portfolio_type5":  "Mobile App",
-  "portfolio_type6":  "SEO and eMarketing",
+  "portfolio_type1":  "SEM (Adwords), SEO, Site Maintenance, CSS",
+  "portfolio_type2":  "Web Design, SEO",
+  "portfolio_type3":  "Javascript Consultation, Specialized Algorithms for Social Media Marketing",
+  "portfolio_type4":  "Website Design, Maintenance, SEO",
+  "portfolio_type5":  "Web Design",
+  "portfolio_type6":  "Web Design, Maintenance",
+  "portfolio_type7":  "Web Hosting, Web Design, Maintenance, SEO, SEM (Adwords)",
+  "portfolio_type8":  "Web Design, SEO, Automated eNewsletter",
+  "portfolio_type9":  "SEO, SEM (Adwords), Web Design, Web Hosting, Mailchimp, Flyers & Promotional Material",
+  "portfolio_type10": "SEM, SEO (Adwords), Web Design, Web Hosting, Mailchimp",
+  "portfolio_type11": "Web Design, Web Hosting, Flyers & Promotional Material",
 
   // Saying Content
   "saying_item1_lead":  "I am very impressed with the level of service received from the folks at Magario.",
