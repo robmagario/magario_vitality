@@ -10,10 +10,10 @@
 
   // Laguage Selection
   "language_en":  "English",
-  "language_jp":  "Japanese",
-  "language_zh":  "Chinese(T)",
-  "language_cn":  "Chinese(S)",
-  "language_br":  "Portuguese",
+  "language_jp":  "日本語",
+  "language_zh":  "中(繁)",
+  "language_cn":  "中(簡)",
+  "language_br":  "Português",
 
   // Brand Name Subtext
   "BrandName":        "マガリオ",
