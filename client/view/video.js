@@ -52,11 +52,11 @@ Template.Video.rendered = function() {
         items: 3,
     });
 
-    // Scrollspy: Highlights the navigation menu items while scrolling.
+    /*// Scrollspy: Highlights the navigation menu items while scrolling.
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
-    })
+    })*/
 
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({
@@ -77,11 +77,11 @@ Template.Video.rendered = function() {
         }
     });
 
-    // Scrollspy: Highlights the navigation menu items while scrolling.
+    /*// Scrollspy: Highlights the navigation menu items while scrolling.
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
-    })
+    })*/
 
     // Activates floating label headings for the contact form.
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
@@ -135,8 +135,27 @@ Template.Video.rendered = function() {
     filterList.init();
 
     TAPi18n.setLanguage('en');
+
+    window.setTimeout(mytesting, 500);
 };
 
+function mytesting() {
+    if(window.pageYOffset < (window.innerHeight-150)) {
+        $('.navbar').addClass('navbar-expanded');
+    } else {
+        $('.navbar').removeClass('navbar-expanded');
+    }
+    window.setTimeout(mytesting, 500);
+}
+
++function ($) {
+    'use strict';
+    // Scrollspy: Highlights the navigation menu items while scrolling.
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    })
+}(jQuery);
 
 function ActiveNavbarHeaderBackground(_index) {
     var _length = $('.navbar-collapse').find('.navbar-nav').find('li').length;
