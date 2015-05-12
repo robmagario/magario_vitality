@@ -16,13 +16,11 @@ if (Meteor.isClient) {
             this.next();
         }
     });*/
-    Router.route("video", {path: "/", controller: "VideoController"});
-    Router.route("agency", {path: "/agency", controller: "AgencyController"});
-    Router.route("creative", {path: "/creative", controller: "CreativeController"});
-    Router.route("culinary", {path: "/culinary", controller: "CulinaryController"});
-    Router.route("index", {path: "/index", controller: "IndexController"});
-    Router.route("fashion", {path: "/fashion", controller: "FashionController"});
-    Router.route("legal", {path: "/legal", controller: "LegalController"});
+    Router.route("video_en", {path: "/", controller: "VideoController"});
+    Router.route("video_jp", {path: "/ja-JP", controller: "VideoController"});
+    Router.route("video_zh", {path: "/zh-CN", controller: "VideoController"});
+    Router.route("video_hk", {path: "/zh-HK", controller: "VideoController"});
+    Router.route("video_br", {path: "/pt-BR", controller: "VideoController"});
 }
 
 Router.map(function () {

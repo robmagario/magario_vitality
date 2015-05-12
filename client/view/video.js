@@ -1,7 +1,15 @@
 /**
  * Created by user on 4/22/2015.
  */
+var MyBrowser = "Web";
+
 Template.Video.rendered = function() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        MyBrowser = "Mobile";
+    } else {
+        MyBrowser = "Web";
+    }
+    //window.alert('You are using ' + MyBrowser);
     /*TEMPLATE_RENDERED_CODE*/
     // Nideo Settings
     $("header.video").wallpaper({
@@ -133,8 +141,18 @@ Template.Video.rendered = function() {
     };
 
     filterList.init();
-
-    TAPi18n.setLanguage('en');
+    var path_check = window.location.pathname;
+    if(window.location.pathname == "/ja-JP") {
+        TAPi18n.setLanguage('jp');
+    } else if(window.location.pathname == "/zh-CN") {
+        TAPi18n.setLanguage('zh');
+    } else if(window.location.pathname == "/zh-HK") {
+        TAPi18n.setLanguage('hk');
+    } else if(window.location.pathname == "/pt-BR") {
+        TAPi18n.setLanguage('br');
+    } else {
+        TAPi18n.setLanguage('en');
+    }
 
     window.setTimeout(mytesting, 500);
 };
@@ -157,27 +175,56 @@ function mytesting() {
     })
 }(jQuery);
 
-function ActiveNavbarHeaderBackground(_index) {
-    var _length = $('.navbar-collapse').find('.navbar-nav').find('li').length;
-    for(var i=0; i<_length; i++) {
-        if(i != _index) {
-            $('.navbar-collapse').find('.navbar-nav').find('li').eq(i).removeClass('active');
-        } else {
-            $('.navbar-collapse').find('.navbar-nav').find('li').eq(_index).addClass('active');
-        }
-    }
-}
-
 function ChangeLanguage(_language) {
     if(_language == 'en') {
         //location.href('/');
+        window.location.pathname = '';
     } else {
         //location.href(_language);
+        window.location.pathname = _language;
     }
-    TAPi18n.setLanguage(_language);
+    //TAPi18n.setLanguage(_language);
 }
 
 Template.Video.events({
+    'click .contact_send_button': function() {
+        console.log("Start");
+        var _name = $('.contact_send_name').val();
+        var _email = $('.contact_send_email').val();
+        var _phone = $('.contact_send_phone').val();
+        var _message = $('.contact_send_message').val();
+        if(_name != "" && _email != "" && _phone != "" && _message != "") {
+            console.log("To Send");
+            var _body =
+                "Name:\t" + _name + "\n" +
+                "Email:\t" + _email + "\n" +
+                "Phone:\t" + _phone + "\n\n" +
+                "Message:\n" + _message;
+            var _subject = "Contact Form from magario.com by " + _name;
+            Meteor.call(
+                'sendEmail',
+                'robson@magario.com',       // to
+                _email,                     // from
+                _subject,                   // subject
+                _body                       // message
+            );
+            $('.contact_send_name').val("");
+            $('.contact_send_email').val("");
+            $('.contact_send_phone').val("");
+            $('.contact_send_message').val("");
+            var _success = "Contact Form is Successfully to Send. \nThank you for your contact.";
+            window.alert(_success);
+        } else {
+            console.log("To Error");
+            var _error = "";
+            if(_name == "") {_error += "Name is missing\n";}
+            if(_email == "") {_error += "Email is missing\n";}
+            if(_phone == "") {_error += "Phone is missing\n";}
+            if(_message == "") {_error += "Message is missing\n";}
+            window.alert(_error);
+        }
+    },
+
     'click a.page-scroll': function(event) {
         Helpers.Log.Show("Click", "a.page-scroll");
         var _tag = event.target.hash.split('#');
@@ -192,39 +239,6 @@ Template.Video.events({
             $('body').animate({scrollTop: targetY}, Helpers.Veriables.ScrollSpeed);
         }
     },
-
-    'click .click-page-top': function() {
-        ActiveNavbarHeaderBackground(0);
-    },
-    'click .click-about': function() {
-        ActiveNavbarHeaderBackground(1);
-    },
-    'click .click-services': function() {
-        ActiveNavbarHeaderBackground(2);
-    },
-    'click .click-clients': function() {
-        ActiveNavbarHeaderBackground(3);
-    },
-    'click .click-pricing': function() {
-        ActiveNavbarHeaderBackground(4);
-    },
-    'click .click-blog': function() {
-    },
-    'click .click-contact': function() {
-        ActiveNavbarHeaderBackground(6);
-    },
-
-    'click .submit-contact-us': function() {
-        var _name = $('#contact_name').val();
-        var _email = $('#contact_email').val();
-        var _phone = $('#contact_phone').val();
-        var _message = $('#contact_message').val();
-        $('#contact_name').val("");
-        $('#contact_email').val("");
-        $('#contact_phone').val("");
-        $('#contact_message').val("");
-    },
-
     'click .language_en': function() {
         ChangeLanguage('en');
     },

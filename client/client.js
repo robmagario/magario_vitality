@@ -29,16 +29,19 @@ Helpers.Log = {
 };
 
 Helpers.ChangeLanguage = function(_language) {
-    TAPi18n.setLanguage(_language);
+    if(_language == 'en') {
+        //location.href('/');
+        window.location.pathname = '';
+    } else {
+        //location.href(_language);
+        window.location.pathname = _language;
+    }
+    // TAPi18n.setLanguage(_language);
 }
 
 Helpers.ChangeNavbarBackground = function() {
     console.log(window.pageYOffset);
 }
-
-Helpers.helloworld = function() {
-    return "Hello World";
-};
 
 _.each(Helpers, function (helper, key) {
     Handlebars.registerHelper(key, helper);
