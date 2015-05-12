@@ -16,7 +16,11 @@ if (Meteor.isClient) {
             this.next();
         }
     });*/
-    Router.route("video", {path: "/", controller: "VideoController"});
+    Router.route("video_en", {path: "/", controller: "VideoController"});
+    Router.route("video_jp", {path: "/jp", controller: "VideoController"});
+    Router.route("video_cn", {path: "/cn", controller: "VideoController"});
+    Router.route("video_hk", {path: "/hk", controller: "VideoController"});
+    Router.route("video_br", {path: "/br", controller: "VideoController"});
     Router.route("agency", {path: "/agency", controller: "AgencyController"});
     Router.route("creative", {path: "/creative", controller: "CreativeController"});
     Router.route("culinary", {path: "/culinary", controller: "CulinaryController"});

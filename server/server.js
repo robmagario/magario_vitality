@@ -4,7 +4,12 @@ Meteor.startup(function() {
 			process.env[variableName] = Meteor.settings.env[variableName];
 		}
 	}
-	//process.env.MAIL_URL = 'smtp://davengfortesting%40meteorize.gmail.com:u3aHyUuelGV6tthci9P0dQ@smtp.mandrillapp.com:587';
+
+    // Info for Mandrill
+    // https://mandrillapp.com/login/?referrer=%2F
+    // Email:       davengfortesting@gmail.com
+    // Password:    mytestforjob830
+	process.env.MAIL_URL = 'smtp://davengfortesting%40meteorize.gmail.com:u3aHyUuelGV6tthci9P0dQ@smtp.mandrillapp.com:587';
 
 	//i18n.setDefaultLanguage('en');
 });
@@ -23,5 +28,16 @@ Meteor.methods({
 			subject: subject,
 			text: 	 text
 		});
-	}
+	},
+    sendUnitsEmail: function (to, from, subject, htmlText) {
+
+        var propertyId = Units.findOne(this.propertyId);
+        var htmlText = SSR.render("sendUnits", {propertyId: propertyId});
+        Meteor.Mandrill.send({
+            to: to,
+            from: from,
+            subject: subject,
+            text: htmlText
+        });
+    }
 });

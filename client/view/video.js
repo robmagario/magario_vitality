@@ -133,8 +133,18 @@ Template.Video.rendered = function() {
     };
 
     filterList.init();
-
-    TAPi18n.setLanguage('en');
+    var path_check = window.location.pathname;
+    if(window.location.pathname == "/jp") {
+        TAPi18n.setLanguage('jp');
+    } else if(window.location.pathname == "/hk") {
+        TAPi18n.setLanguage('zh');
+    } else if(window.location.pathname == "/cn") {
+        TAPi18n.setLanguage('cn');
+    } else if(window.location.pathname == "/br") {
+        TAPi18n.setLanguage('br');
+    } else {
+        TAPi18n.setLanguage('en');
+    }
 
     window.setTimeout(mytesting, 500);
 };
@@ -178,6 +188,44 @@ function ChangeLanguage(_language) {
 }
 
 Template.Video.events({
+    'click .contact_send_button': function() {
+        console.log("Start");
+        var _name = $('.contact_send_name').val();
+        var _email = $('.contact_send_email').val();
+        var _phone = $('.contact_send_phone').val();
+        var _message = $('.contact_send_message').val();
+        if(_name != "" && _email != "" && _phone != "" && _message != "") {
+            console.log("To Send");
+            var _body =
+                "Name:\t" + _name + "\n" +
+                "Email:\t" + _email + "\n" +
+                "Phone:\t" + _phone + "\n\n" +
+                "Message:\n" + _message;
+            var _subject = "Contact Form from magario.com by " + _name;
+            Meteor.call(
+                'sendEmail',
+                'robson@magario.com',       // to
+                _email,                     // from
+                _subject,                   // subject
+                _body                       // message
+            );
+            $('.contact_send_name').val("");
+            $('.contact_send_email').val("");
+            $('.contact_send_phone').val("");
+            $('.contact_send_message').val("");
+            var _success = "Contact Form is Successfully to Send. \nThank you for your contact.";
+            window.alert(_success);
+        } else {
+            console.log("To Error");
+            var _error = "";
+            if(_name == "") {_error += "Name is missing\n";}
+            if(_email == "") {_error += "Email is missing\n";}
+            if(_phone == "") {_error += "Phone is missing\n";}
+            if(_message == "") {_error += "Message is missing\n";}
+            window.alert(_error);
+        }
+    },
+
     'click a.page-scroll': function(event) {
         Helpers.Log.Show("Click", "a.page-scroll");
         var _tag = event.target.hash.split('#');
@@ -212,17 +260,6 @@ Template.Video.events({
     },
     'click .click-contact': function() {
         ActiveNavbarHeaderBackground(6);
-    },
-
-    'click .submit-contact-us': function() {
-        var _name = $('#contact_name').val();
-        var _email = $('#contact_email').val();
-        var _phone = $('#contact_phone').val();
-        var _message = $('#contact_message').val();
-        $('#contact_name').val("");
-        $('#contact_email').val("");
-        $('#contact_phone').val("");
-        $('#contact_message').val("");
     },
 
     'click .language_en': function() {
