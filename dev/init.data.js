@@ -11,7 +11,9 @@ Meteor.startup(function () {
             }
         });
         var userrob = Meteor.users.findOne({username: 'robmagario'});
-        Roles.addUsersToRoles(userrob._id, ['admin']);
+        if(userrob != null) {
+            Roles.addUsersToRoles(userrob._id, ['admin']);
+        }
     }
 
     if (typeof Meteor.users.findOne({
@@ -26,7 +28,9 @@ Meteor.startup(function () {
             }
         });
         var userabbey = Meteor.users.findOne({username: 'abbeythorley'});
-        Roles.addUsersToRoles(userabbey._id, ['admin']);
+        if(userabbey != null) {
+            Roles.addUsersToRoles(userabbey._id, ['admin']);
+        }
     }
 
     if (typeof Meteor.users.findOne({
@@ -41,7 +45,9 @@ Meteor.startup(function () {
             }
         });
         var user_kenta = Meteor.users.findOne({username: 'Dranithix'});
-        Roles.addUsersToRoles(user_kenta._id, ['admin']);
+        if(user_kenta != null) {
+            Roles.addUsersToRoles(user_kenta._id, ['admin']);
+        }
     }
 });/**
  * Created by abbeythorley on 29/4/15.

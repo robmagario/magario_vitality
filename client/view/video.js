@@ -1,7 +1,15 @@
 /**
  * Created by user on 4/22/2015.
  */
+var MyBrowser = "Web";
+
 Template.Video.rendered = function() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        MyBrowser = "Mobile";
+    } else {
+        MyBrowser = "Web";
+    }
+    //window.alert('You are using ' + MyBrowser);
     /*TEMPLATE_RENDERED_CODE*/
     // Nideo Settings
     $("header.video").wallpaper({
@@ -134,13 +142,13 @@ Template.Video.rendered = function() {
 
     filterList.init();
     var path_check = window.location.pathname;
-    if(window.location.pathname == "/jp") {
+    if(window.location.pathname == "/ja-JP") {
         TAPi18n.setLanguage('jp');
-    } else if(window.location.pathname == "/hk") {
+    } else if(window.location.pathname == "/zh-CN") {
         TAPi18n.setLanguage('zh');
-    } else if(window.location.pathname == "/cn") {
-        TAPi18n.setLanguage('cn');
-    } else if(window.location.pathname == "/br") {
+    } else if(window.location.pathname == "/zh-HK") {
+        TAPi18n.setLanguage('hk');
+    } else if(window.location.pathname == "/pt-BR") {
         TAPi18n.setLanguage('br');
     } else {
         TAPi18n.setLanguage('en');
@@ -167,24 +175,15 @@ function mytesting() {
     })
 }(jQuery);
 
-function ActiveNavbarHeaderBackground(_index) {
-    var _length = $('.navbar-collapse').find('.navbar-nav').find('li').length;
-    for(var i=0; i<_length; i++) {
-        if(i != _index) {
-            $('.navbar-collapse').find('.navbar-nav').find('li').eq(i).removeClass('active');
-        } else {
-            $('.navbar-collapse').find('.navbar-nav').find('li').eq(_index).addClass('active');
-        }
-    }
-}
-
 function ChangeLanguage(_language) {
     if(_language == 'en') {
         //location.href('/');
+        window.location.pathname = '';
     } else {
         //location.href(_language);
+        window.location.pathname = _language;
     }
-    TAPi18n.setLanguage(_language);
+    //TAPi18n.setLanguage(_language);
 }
 
 Template.Video.events({
@@ -240,28 +239,6 @@ Template.Video.events({
             $('body').animate({scrollTop: targetY}, Helpers.Veriables.ScrollSpeed);
         }
     },
-
-    'click .click-page-top': function() {
-        ActiveNavbarHeaderBackground(0);
-    },
-    'click .click-about': function() {
-        ActiveNavbarHeaderBackground(1);
-    },
-    'click .click-services': function() {
-        ActiveNavbarHeaderBackground(2);
-    },
-    'click .click-clients': function() {
-        ActiveNavbarHeaderBackground(3);
-    },
-    'click .click-pricing': function() {
-        ActiveNavbarHeaderBackground(4);
-    },
-    'click .click-blog': function() {
-    },
-    'click .click-contact': function() {
-        ActiveNavbarHeaderBackground(6);
-    },
-
     'click .language_en': function() {
         ChangeLanguage('en');
     },

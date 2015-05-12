@@ -28,16 +28,5 @@ Meteor.methods({
 			subject: subject,
 			text: 	 text
 		});
-	},
-    sendUnitsEmail: function (to, from, subject, htmlText) {
-
-        var propertyId = Units.findOne(this.propertyId);
-        var htmlText = SSR.render("sendUnits", {propertyId: propertyId});
-        Meteor.Mandrill.send({
-            to: to,
-            from: from,
-            subject: subject,
-            text: htmlText
-        });
-    }
+	}
 });
