@@ -1,31 +1,31 @@
 {
   // Navbar Menu
-  "navbar_about":     "に関する",
+  "navbar_about":     "会社案内",
   "navbar_services":  "サービス",
-  "navbar_clients":   "クライアント",
-  "navbar_pricing":   "プライシング",
+  "navbar_clients":   "制作実績",
+  "navbar_pricing":   "価格表",
   "navbar_blog":      "ブログ",
-  "navbar_contact":   "コンタクト",
+  "navbar_contact":   "お問い合わせ",
   "navbar_language":  "言語",
 
   // Laguage Selection
-  "language_en":  "英語",
+  "language_en":  "English",
   "language_jp":  "日本語",
-  "language_hk":  "Chinese(T)",
-  "language_zh":  "Chinese(S)",
-  "language_br":  "Portuguese",
+  "language_zh":  "中文（繁体字）",
+  "language_cn":  "中文（简体字）",
+  "language_br":  "Português",
 
   // Brand Name Subtext
   "BrandName":        "マガリオ",
-  "BrandNameSubtext": "ウェブデザインとeマーケティングスペシャリスト",
+  "BrandNameSubtext": "ウェブ制作、SEM/SEO、モバイルアプリ開発",
 
   // About Content
-  "about_header":         "誰のためにカスタマイズされたウェブサービス",
-  "about_header_subtext": "マガリオインターナショナルは、香港に拠点を置くウェブコンサルティング会社です。<br>私たちは、洗練された美しいウェブサイトを作成し、企業データベースへの個人のブログから、世界に送信します。",
+  "about_header":         "みんなのためのウェブ制作、モバイル、eマーケティング戦略",
+  "about_header_subtext": "マガリオインターナショナルは、香港に本社を置くウェブコンサルティング会社です。<br>弊社は、最先端の技術や世界トップの高品質を目指し、毎日ウェブ制作、モバイルアプリ開発、SEO/SEMサービスに取り組んでいます。",
   "about_subheader1":     "インターナショナル",
-  "about_subtext1":       "国際スタッフは、国際的な顧客のニーズを満たすことができます。多言語サービス、多通貨のウェブサイト。",
+  "about_subtext1":       "日本人スタッフや外国人スタッフもいますので、多言語サイト制作、多通貨のウェブ制作もネイティブレベルで提供します。",
   "about_subheader2":     "eマーケティング",
-  "about_subtext2":       "私たちは新しい聴衆にあなたのサイトを紹介するために、最新の技術を使用しています。ソーシャルメディアプラグインやアドワーズ広告のSEOの技術から、我々はそれをすべて行います。",
+  "about_subtext2":       "お客様のサイトを宣伝するための最新の技術を使用します。ソーシャルメディアやアドワーズ広告の他に意味のあるSEOの技術から",
   "about_subheader3":     "モバイル",
   "about_subtext3":       "我々は、デスクトップからモバイルデバイスへの移行をウェブアプリ作ります。全く新しいプラットフォーム上でオーディエンスを再発見。",
   "about_subheader4":     "特別な注意",
@@ -122,34 +122,34 @@
   "pricing_subtitle1_price":  "<span class='number'><sup></sup>30%</span> / プロジェクト",
   "pricing_subtitle1_item":   "<li class='list-group-item''>無制限プラン</li><li class='list-group-item'>英語のネイティブスピーカーによるレビュー</li><li class='list-group-item'>テキストとイメージのコンテンツ</li><li class='list-group-item'><strong>トップ</strong>のGoogleやFacebookの<strong>ランキング</strong></li><li class='list-group-item'>デスクトップおよびモバイル広告</li><li class='list-group-item'>ニュースレターのサポート</li>",
   "pricing_subtitle2_header": "ウェブデザイン",
-  "pricing_subtitle2_price":  "<span class='number'><sup>$</sup>1500</span> / 1時間",
-  "pricing_subtitle2_item":   "<li class='list-group-item'>美しいデザイン</li><li class='list-group-item'><strong>デスクトップ＆モバイル</strong>用ウェブアプリ</li><li class='list-group-item'>クライアントごとにカスタマイズされたデザイン</li><li class='list-group-item'>複数言語＆通貨</li><li class='list-group-item'>電子商取引支援</li><li class='list-group-item'>簡単に編集用のオープンコード</li>",
+  "pricing_subtitle2_price":  "<span class='number'><sup>$</sup>1500</span> / hour",
+  "pricing_subtitle2_item":   "<li class='list-group-item'>Sleek, Beautiful Design</li><li class='list-group-item'>Web Apps for <strong>Desktop & Mobile</strong></li><li class='list-group-item'>Customized Design for Each Client</li><li class='list-group-item'>Multiple Languages & Currencies</li><li class='list-group-item'>eCommerce Support</li><li class='list-group-item'>Open Code for Easy Editing</li>",
   "pricing_subtitle3_header": "メディア制作",
-  "pricing_subtitle3_price":  "<span class='number'><sup>$</sup>4000</span> / 1時間",
-  "pricing_subtitle3_item":   "<li class='list-group-item'>業務用ビデオ機器</li><li class='list-group-item'>ファイナルカット編集</li><li class='list-group-item'>振付＆デザイン</li><li class='list-group-item'>YouTubeのマーケティング</li><li class='list-group-item'>ポスター、チラシ、ロゴ</li><li class='list-group-item'><strong>無料相談</strong></li>",
-  "pricing_signup_button":    "新規登録",
+  "pricing_subtitle3_price":  "<span class='number'><sup>$</sup>4000</span> / hour",
+  "pricing_subtitle3_item":   "<li class='list-group-item'>Professional Video Equipment</li><li class='list-group-item'>Final Cut Editing</li><li class='list-group-item'>Choreography & Design</li><li class='list-group-item'>Youtube Marketing</li><li class='list-group-item'>Posters, Flyers, Logos</li><li class='list-group-item'><strong>Free Consultations</strong></li>",
+  "pricing_signup_button":    "Sign Up",
 
   // Subscribe Content
-  "subscribe_header": "ニュースレターを購読します",
-  "subscribe_button": "購読！",
+  "subscribe_header": "Subscribe to our newsletter",
+  "subscribe_button": "Subscribe!",
 
   // Contact Us Content
-  "contact_header":         "お問い合わせ",
-  "contact_header_subtext": "あなたの次のプロジェクトについて教えて、我々はあなたが私たちはあなたを助けるために何ができるかをお知らせしますしてください。",
+  "contact_header":         "Contact Us",
+  "contact_header_subtext": "Please tell us about your next project and we will let you know what we can do to help you.",
   // Send
-  "contact_name":         "名前",
-  "contact_email":        "メール",
-  "contact_phone":        "電話番号",
-  "contact_message":      "メッセージ",
-  "contact_send_button":  "送信",
+  "contact_name":         "Name",
+  "contact_email":        "Email Address",
+  "contact_phone":        "Phone Number",
+  "contact_message":      "Message",
+  "contact_send_button":  "Send",
   // Facebook
-  "contact_facebook": "Facebook上で私たちをチェックしてください！",
+  "contact_facebook": "Check us out on Facebook!",
   // Sub Title
-  "contact_subtitle1_header":   "コール",
+  "contact_subtitle1_header":   "Call",
   "contact_subtitle1_text":     "+852 6818 3401",
-  "contact_subtitle2_header":   "訪問",
+  "contact_subtitle2_header":   "Visit",
   "contact_subtitle2_text":     "The Good Lab, L1<br>500 Tung Chau Street<br>Cheung Sha Wan, Kowloon, Hong Kong, S.A.R.",
-  "contact_subtitle3_header":   "メール",
+  "contact_subtitle3_header":   "Email",
   "contact_subtitle3_text":     "info@magario.com",
 
   // Copyright
