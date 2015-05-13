@@ -43,6 +43,17 @@ Helpers.ChangeNavbarBackground = function() {
     console.log(window.pageYOffset);
 }
 
+Helpers.UploadImage = function(_image) {
+    var _api = new imgur.Api("34ca6c098f1fe8ea400fea3a8b987ef6a220bd03");
+    _api.uploadUrl(_image, function(err, response){
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("image uploaded. ID " + response.get('id'));
+        }
+    });
+}
+
 _.each(Helpers, function (helper, key) {
     Handlebars.registerHelper(key, helper);
 });
