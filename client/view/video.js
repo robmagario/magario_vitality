@@ -186,7 +186,31 @@ function ChangeLanguage(_language) {
     //TAPi18n.setLanguage(_language);
 }
 
+function hide_language_select() {
+    $('.language_select').hide();
+    return '';
+}
+
 Template.Video.events({
+    'click .language_en': function() {
+      ChangeLanguage('en');
+    },
+    'click .language_jp': function() {
+        ChangeLanguage('jp');
+    },
+    'click .language_zh': function() {
+        ChangeLanguage('zh');
+    },
+    'click .language_br': function() {
+        ChangeLanguage('br');
+    },
+    'focus .dropdown_language': function() {
+        $('.language_select').show();
+    },
+    'blur .dropdown_language': function() {
+        window.setTimeout(hide_language_select, 500);
+    },
+
     'click .contact_send_button': function() {
         console.log("Start");
         var _name = $('.contact_send_name').val();
@@ -238,18 +262,6 @@ Template.Video.events({
             }
             $('body').animate({scrollTop: targetY}, Helpers.Veriables.ScrollSpeed);
         }
-    },
-    'click .language_en': function() {
-        ChangeLanguage('en');
-    },
-    'click .language_jp': function() {
-        ChangeLanguage('jp');
-    },
-    'click .language_zh': function() {
-        ChangeLanguage('zh');
-    },
-    'click .language_br': function() {
-        ChangeLanguage('br');
     }
 });
 

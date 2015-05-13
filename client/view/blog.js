@@ -2,16 +2,26 @@
  * Created by Dave on 5/13/2015.
  */
 
-Template.Blog.rendered = function() {
+Template.myBlogIndexTemplate.rendered = function() {
+    if(Meteor.user() != null) {
+        $('.admin_logout').show();
+    } else {
+        $('.admin_logout').hide();
+    }
+
     api = new imgur.Api("secretkey");
     api.getImageInformation('imagehash', onInfo);
     api.uploadUrl("http://foo.bar/funny.gif", onUpload);
 }
 
-Template.Blog.events({
-
+Template.myBlogIndexTemplate.events({
+    // Admin Logout
+    'click .admin_logout': function() {
+        Meteor.logout();
+        window.location.reload();
+    }
 });
 
-Template.Video.helpers({
+Template.myBlogIndexTemplate.helpers({
 
 });
