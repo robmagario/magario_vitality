@@ -1,16 +1,13 @@
 <template name="myBlogIndexTemplate">
+    <img class="blog_logo" src="img/magario/magario-textlogo-navbar.png">
     <div class="blog_page">
-    <link rel="alternate" type="application/rss+xml" title="My blog title" href="/rss/posts">
-    <h1>Welcome to my Blog</h1>
-    <ul>
+        <link rel="alternate" type="application/rss+xml" title="My blog title" href="/rss/posts">
+        <h1>Welcome to Magario Blog</h1>
         {{#each posts}}
-            <li>
-                <h2>{{title}}</h2>
-                <p>Published on {{publishedAt}}</p>
-                <p>Excerpt: {{excerpt}}</p>
-            </li>
+            <div class="post_item">
+                <h2>{{title}} <small>Published on {{publishedAt}}</small></h2>
+                <div class="post_item_content">{{{excerpt}}}</div>
+            </div>
         {{/each}}
-    </ul>
     </div>
-
 </template>
