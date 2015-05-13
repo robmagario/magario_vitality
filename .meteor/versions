@@ -15,13 +15,13 @@ blaze-tools@1.0.3
 boilerplate-generator@1.0.3
 callback-hook@1.0.3
 cfs:access-point@0.1.43
-cfs:base-package@0.0.29
+cfs:base-package@0.0.30
 cfs:collection@0.5.3
 cfs:collection-filters@0.2.3
 cfs:data-man@0.0.6
 cfs:file@0.1.15
 cfs:filesystem@0.1.1
-cfs:http-methods@0.0.28
+cfs:http-methods@0.0.29
 cfs:http-publish@0.0.13
 cfs:power-queue@0.9.11
 cfs:reactive-list@0.0.9
@@ -74,6 +74,7 @@ mobile-status-bar@1.0.3
 momentjs:moment@2.8.4
 mongo@1.1.0
 mongo-livedata@1.0.8
+mrt:bootstrap-3@0.3.8
 mrt:moment@2.8.1
 mrt:underscore-string-latest@2.3.3
 natestrauser:font-awesome@4.3.0
