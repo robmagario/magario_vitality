@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "imgur": {}
+    },
+    "packages": {
+      "imgur": {
+        "git": "https://github.com/grmlin/meteor-imgur.git",
+        "tag": "v0.1.0",
+        "commit": "0781b66ce15a4d9afaed98455761a5b7a2104125"
+      }
+    }
+  }
+}
