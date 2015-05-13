@@ -135,21 +135,21 @@
 
   // Contact Us Content
   "contact_header":         "お問い合わせ",
-  "contact_header_subtext": "Please tell us about your next project and we will let you know what we can do to help you.",
+  "contact_header_subtext": "以下のフォームに、お問い合わせの内容をご入力ください。",
   // Send
-  "contact_name":         "Name",
-  "contact_email":        "Email Address",
-  "contact_phone":        "Phone Number",
-  "contact_message":      "Message",
-  "contact_send_button":  "Send",
+  "contact_name":         "氏名",
+  "contact_email":        "メールアドレス",
+  "contact_phone":        "電話番号",
+  "contact_message":      "メッセージの内容",
+  "contact_send_button":  "送信",
   // Facebook
-  "contact_facebook": "Check us out on Facebook!",
+  "contact_facebook": "是非マガリオのFacebookページに「いいね」を押してください。",
   // Sub Title
-  "contact_subtitle1_header":   "Call",
+  "contact_subtitle1_header":   "電話番号",
   "contact_subtitle1_text":     "+852 6818 3401",
-  "contact_subtitle2_header":   "Visit",
+  "contact_subtitle2_header":   "所在地",
   "contact_subtitle2_text":     "The Good Lab, L1<br>500 Tung Chau Street<br>Cheung Sha Wan, Kowloon, Hong Kong, S.A.R.",
-  "contact_subtitle3_header":   "Email",
+  "contact_subtitle3_header":   "メールアドレス",
   "contact_subtitle3_text":     "info@magario.com",
 
   // Copyright
@@ -189,13 +189,13 @@
   "Stork_list":     "<li>Client: <strong><a href=''>Stork</a></strong></li><li>Date: <strong><a href=''>April 2015-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Maintenance, SEO</a></strong></li>",
 
   // Hayashida Acupunctura Detail
-  "HayashidaAcupunctura_name":    "Hayashida Acupunctura",
-  "HayashidaAcupunctura_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "HayashidaAcupunctura_name":    "林田鍼灸院",
+  "HayashidaAcupunctura_subtext": "サンパウロに本社を置く鍼灸院です。",
   "HayashidaAcupunctura_list":    "<li>Client: <strong><a href=''>Hayashida Acupunctura</a></strong></li><li>Date: <strong><a href=''>May 2014-July 2014</a></strong></li><li>Service: <strong><a href=''>Web Design, SEO, Automated eNewsletter</a></strong></li>",
 
   // Dance Wtih Style Detail
-  "DanceWtihStyle_name":    "Dance Wtih Style",
-  "DanceWtihStyle_subtext": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.",
+  "DanceWtihStyle_name":    "ダンス・ウィッズ・スタイル",
+  "DanceWtihStyle_subtext": "香港最大級のサルサダンススクール。なんと5,000名以上のメンバーが登録されています。",
   "DanceWtihStyle_list":    "<li>Client: <strong><a href=''>Dance With Style</a></strong></li><li>Date: <strong><a href=''>January 2013-Present</a></strong></li><li>Service: <strong><a href=''>Web Design, Web Hosting, Mailchimp, SEO, SEM (Adwords), Flyers & Promotional Material</a></strong></li>",
 
   // Mauve Detail
