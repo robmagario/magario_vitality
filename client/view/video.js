@@ -212,15 +212,15 @@ Template.Video.events({
             $('.contact_send_email').val("");
             $('.contact_send_phone').val("");
             $('.contact_send_message').val("");
-            var _success = "Contact Form is Successfully to Send. \nThank you for your contact.";
+            var _success = "Your message has been sent. \nThank you for contacting us, we'll be in touch soon.";
             window.alert(_success);
         } else {
             console.log("To Error");
             var _error = "";
-            if(_name == "") {_error += "Name is missing\n";}
-            if(_email == "") {_error += "Email is missing\n";}
-            if(_phone == "") {_error += "Phone is missing\n";}
-            if(_message == "") {_error += "Message is missing\n";}
+            if(_name == "") {_error += "Please enter a name so we know you're not a robot.\n";}
+            if(_email == "") {_error += "Please enter your email so we can contact you.\n";}
+            if(_phone == "") {_error += "Please enter a phone number so we can contact you.\n";}
+            if(_message == "") {_error += "Please drop us a message. What services would you like to enquire?\n";}
             window.alert(_error);
         }
     },
