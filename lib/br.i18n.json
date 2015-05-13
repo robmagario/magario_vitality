@@ -1,43 +1,43 @@
 {
   // Navbar Menu
-  "navbar_about":     "About",
-  "navbar_services":  "Services",
-  "navbar_clients":   "Clients",
-  "navbar_pricing":   "Pricing",
+  "navbar_about":     "Sobre",
+  "navbar_services":  "Serviços",
+  "navbar_clients":   "Clientes",
+  "navbar_pricing":   "Preços",
   "navbar_blog":      "Blog",
-  "navbar_contact":   "Contact",
-  "navbar_language":  "Language",
+  "navbar_contact":   "Contato",
+  "navbar_language":  "Idioma",
 
   // Laguage Selection
   "language_en":  "English",
-  "language_jp":  "日本語",
-  "language_hk":  "中文（繁体字）",
-  "language_zh":  "中文（简体字）",
+  "language_jp":  "Japanese",
+  "language_hk":  "Chinese(T)",
+  "language_zh":  "Chinese(S)",
   "language_br":  "Português",
 
   // Brand Name Subtext
   "BrandName":        "Magario",
-  "BrandNameSubtext": "Web Design & eMarketing Specialists",
+  "BrandNameSubtext": "Especialistas em e-Marketing e Web Design",
 
   // About Content
-  "about_header":         "Customized Web Service for Anyone",
-  "about_header_subtext": "Magario International is a web consultancy firm based in Hong Kong.<br>We create sleek and beautiful websites and send it to the world, from personal blogs to corporate databases.",
-  "about_subheader1":     "International",
-  "about_subtext1":       "International staff to meet the needs of an international clientele. Multilingual services, multi-currency websites.",
+  "about_header":         "Páginas que são lindas de ver, facéis de usar e rápidas a se visualizar",
+  "about_header_subtext": "A Magario International é uma empresa de consultoria de TI localizada em Hong Kong.<br>Nós criamos sites que são rápidos e de ótima aparência para quaisquer clientes, desde pessoas físicas até grandes corporações multinacionais.",
+  "about_subheader1":     "Internacional",
+  "about_subtext1":       "Temos funcionários de 6 países diferentes incluindo o Brasil para criações de sites em vários idiomas e eCommerce compatível com várias moedas.",
   "about_subheader2":     "eMarketing",
-  "about_subtext2":       "We use the newest technologies to introduce your site to new audiences. From SEO technology to social media plugins and Adwords, we do it all.",
+  "about_subtext2":       "Utilizamos as últimas tecnologias de eMarketing e as mais avançadas técnicas de SEO/SEM. Também promovemos seu site através de mídias socias.",
   "about_subheader3":     "Mobile",
-  "about_subtext3":       "We make web apps that transition from desktop to mobile devices. Rediscover your audience on a whole new platform.",
-  "about_subheader4":     "Special Attention",
-  "about_subtext4":       "We work on only a handful of projects at a time to ensure our clients receive our full attention. Project-specific websites within an efficient time frame.",
+  "about_subtext3":       "Nossos sites são visualizados bem tanto em desktops quanto em aparelhos de telefonia móvel e tablets.",
+  "about_subheader4":     "Atenção especial",
+  "about_subtext4":       "Procuramos trabalhar com o menor número de projetos ao mesmo tempo para garantir completa atenção aos nossos clientes.",
 
   // Our Team Content
-  "ourteam_header":         "Our Team",
-  "ourteam_header_subtext": "We're a friendly and determined group of designers, marketing specialists and computer engineers, with a large talent pool between us.",
+  "ourteam_header":         "Nossa Equipe",
+  "ourteam_header_subtext": "Nossa equipe conta com os melhores engenheiros, designers, e especialistas de e-marketing com larga experiência em vários ramos de TI.",
   "ourteam_img1_name":      "Robson Hayashida",
-  "ourteam_img1_pos":       "Chief Technology Officer",
+  "ourteam_img1_pos":       "CEO",
   "ourteam_img2_name":      "Todd Katsuyama",
-  "ourteam_img2_pos":       "Chief Executive Officer",
+  "ourteam_img2_pos":       "CEO",
   "ourteam_img3_name":      "Abbey Thorley",
   "ourteam_img3_pos":       "Vice-President of eCommerce",
   "ourteam_img4_name":      "Hemant Sureshkumar",
@@ -46,22 +46,22 @@
   "ourteam_img5_pos":       "Software Engineer",
 
   // Work with us Content
-  "work_brand_text":  "<span class='quote'>“What separates <span class='text-primary'>design</span> from <span class='text-primary'>art</span> is that design is meant to be… <span class='text-primary'>functional</span>.”<br><br>― Cameron Moll</span>",
-  "work_button":      "Work With Us",
+  "work_brand_text":  "<span class='quote'>“O que separa o <span class='text-primary'>design</span> da <span class='text-primary'>arte</span> é que o design precisa ser... <span class='text-primary'>funcional</span>.”<br><br>― Cameron Moll</span>",
+  "work_button":      "Trabalhe conosco",
 
   // Services Content
-  "services_header":            "Process",
-  "services_header_subtext":    "Here is an overview of how we approach each of our projects.",
-  "services_subtitle1_header":  "Consult",
-  "services_subtitle1_point":   "<li>free client consultation</li><li>draft project strategy</li><li>pinpoint time constraints</li><li>research</li>",
-  "servives_subtitle2_header":  "Build",
-  "services_subtitle2_point":   "<li>host and design site</li><li>engineering and troubleshooting</li><li>client feedback</li><li>create eMarketing strategies</li>",
-  "services_subtitle3_header":  "Launch",
-  "services_subtitle3_point":   "<li>deploy website</li><li>market product launch</li><li>collect UX data</li><li>quarterly maintenence</li>",
+  "services_header":            "Processo",
+  "services_header_subtext":    "Aqui uma descrição do nosso processo de trabalho.",
+  "services_subtitle1_header":  "Consulta",
+  "services_subtitle1_point":   "<li>Primeira consulta gratuita</li><li>Rascunho das estratégias</li><li>Estimativa de tempo</li><li>Pesquisa</li>",
+  "servives_subtitle2_header":  "Desenvolvimento",
+  "services_subtitle2_point":   "<li>Fazemos hosting e desenvolvemos o site</li><li>Engenharia e correção de erros</li><li>Avaliação pelo cliente</li><li>Criação de estratégias de e-marketing</li>",
+  "services_subtitle3_header":  "Lançamento",
+  "services_subtitle3_point":   "<li>Lançamos o site</li><li>Fazemos marketing do lançamento</li><li>Coleção de dados e feedback da UX</li><li>Manutenção trimestral</li>",
 
   // Clients Content
-  "clients_header":         "Clients",
-  "clients_header_subtext": "Here is a small sample of some sites we have produced for our clients.",
+  "clients_header":         "Clientes",
+  "clients_header_subtext": "Uma breve lista de alguns dos sites que produzimos para nossos clientes.",
   "clients_project1_name":  "Living Alive PR",
   "clients_project1_des":   "Cross-platform Web Design and SEO Marketing",
   "clients_project2_name":  "Tanner DeWitt Solicitors",
@@ -73,12 +73,12 @@
   "clients_detail_button":  "View Details",
 
   // Portfolio Content
-  "portfolio_header":         "Portfolio",
-  "portfolio_header_subtext": "Here are some of our other projects.",
-  "portfolio_selection1":     "All",
-  "portfolio_selection2":     "Personal",
-  "portfolio_selection3":     "Commercial",
-  "portfolio_selection4":     "Corporate",
+  "portfolio_header":         "Porfólio",
+  "portfolio_header_subtext": "Aqui constam alguns outros projetos que realizamos.",
+  "portfolio_selection1":     "Todos",
+  "portfolio_selection2":     "Pessoais",
+  "portfolio_selection3":     "Comerciais",
+  "portfolio_selection4":     "Corporativos",
   // Image Name
   "portfolio_img1":   "Amaranto",
   "portfolio_img2":   "Living Alive PR",
@@ -93,7 +93,7 @@
   "portfolio_img11":  "Taobao Agente Style",
   "portfolio_img12":  "GWG Holdings",
   // Type
-  "portfolio_type1":  "SEM (Adwords), SEO, Site Maintenance, CSS",
+  "portfolio_type1":  "SEM (Adwords), SEO, manutenção do site, CSS",
   "portfolio_type2":  "Web Design, SEO",
   "portfolio_type3":  "Javascript Consultation, Specialized Algorithms for Social Media Marketing",
   "portfolio_type4":  "Website Design, Maintenance, SEO",
@@ -116,8 +116,8 @@
   "saying_item2_pos":   "CEO of Dance With Style and Imagine8",
 
   // Pricing Content
-  "pricing_header":           "Pricing",
-  "pricing_header_subtext":   "Honest Prices. Professional Services. Local Rates.",
+  "pricing_header":           "Preços",
+  "pricing_header_subtext":   "Preços honestos. Serviços profissionais. Entrega local.",
   "pricing_subtitle1_header": "eMarketing",
   "pricing_subtitle1_price":  "<span class='number'><sup></sup>30%</span> / project",
   "pricing_subtitle1_item":   "<li class='list-group-item''>Unlimited Promotions</li><li class='list-group-item'>Reviewed by Native English Speakers</li><li class='list-group-item'>Text and Image Content</li><li class='list-group-item'><strong>Top Rankings</strong> for Google & Facebook</li><li class='list-group-item'>Ads for Desktop & Mobile</li><li class='list-group-item'>Newsletter Support</li>",
@@ -130,24 +130,24 @@
   "pricing_signup_button":    "Sign Up",
 
   // Subscribe Content
-  "subscribe_header": "Subscribe to our newsletter",
-  "subscribe_button": "Subscribe!",
+  "subscribe_header": "Increva-se na nossa newsletter!",
+  "subscribe_button": "Inscreva-me!",
 
   // Contact Us Content
-  "contact_header":         "Contact Us",
-  "contact_header_subtext": "Please tell us about your next project and we will let you know what we can do to help you.",
+  "contact_header":         "Contate-nos",
+  "contact_header_subtext": "Por favor preencha o campo abaixo e entraremos em contato dentro de 24 horas.",
   // Send
   "contact_name":         "Name",
-  "contact_email":        "Email Address",
-  "contact_phone":        "Phone Number",
-  "contact_message":      "Message",
-  "contact_send_button":  "Send",
+  "contact_email":        "Email",
+  "contact_phone":        "Número de telefone",
+  "contact_message":      "Mensagem",
+  "contact_send_button":  "Enviar",
   // Facebook
-  "contact_facebook": "Check us out on Facebook!",
+  "contact_facebook": "Acesse a nossa página no Facebook!",
   // Sub Title
-  "contact_subtitle1_header":   "Call",
+  "contact_subtitle1_header":   "Ligar",
   "contact_subtitle1_text":     "+852 6818 3401",
-  "contact_subtitle2_header":   "Visit",
+  "contact_subtitle2_header":   "Visite-nos",
   "contact_subtitle2_text":     "The Good Lab, L1<br>500 Tung Chau Street<br>Cheung Sha Wan, Kowloon, Hong Kong, S.A.R.",
   "contact_subtitle3_header":   "Email",
   "contact_subtitle3_text":     "info@magario.com",

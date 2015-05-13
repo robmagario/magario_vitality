@@ -19,16 +19,16 @@ if (Meteor.isClient) {
     Router.route("admin_login", {path: "/admin", controller: "LoginController"});
 
     Router.route("video_en", {path: "/", controller: "VideoController"});
-    Router.route("video_jp", {path: "/ja-JP", controller: "VideoController"});
-    Router.route("video_zh", {path: "/zh-CN", controller: "VideoController"});
-    Router.route("video_hk", {path: "/zh-HK", controller: "VideoController"});
-    Router.route("video_br", {path: "/pt-BR", controller: "VideoController"});
+    Router.route("video_jp", {path: "/jp", controller: "VideoController"});
+    Router.route("video_zh", {path: "/cn", controller: "VideoController"});
+    Router.route("video_hk", {path: "/hk", controller: "VideoController"});
+    Router.route("video_br", {path: "/br", controller: "VideoController"});
 
     Router.route("blog_en", {path: "/blog", controller: "BlogController"});
-    Router.route("blog_jp", {path: "/ja-JP/blog", controller: "BlogController"});
-    Router.route("blog_zh", {path: "/zh-CN/blog", controller: "BlogController"});
-    Router.route("blog_hk", {path: "/zh-HK/blog", controller: "BlogController"});
-    Router.route("blog_br", {path: "/pt-BR/blog", controller: "BlogController"});
+    Router.route("blog_jp", {path: "/jp/blog", controller: "BlogController"});
+    Router.route("blog_zh", {path: "/cn/blog", controller: "BlogController"});
+    Router.route("blog_hk", {path: "/hk/blog", controller: "BlogController"});
+    Router.route("blog_br", {path: "/br/blog", controller: "BlogController"});
 
 }
 

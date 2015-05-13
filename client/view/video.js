@@ -142,13 +142,13 @@ Template.Video.rendered = function() {
 
     filterList.init();
     var path_check = window.location.pathname;
-    if(window.location.pathname == "/ja-JP") {
+    if(window.location.pathname == "/jp") {
         TAPi18n.setLanguage('jp');
-    } else if(window.location.pathname == "/zh-CN") {
+    } else if(window.location.pathname == "/cn") {
         TAPi18n.setLanguage('zh');
-    } else if(window.location.pathname == "/zh-HK") {
+    } else if(window.location.pathname == "/hk") {
         TAPi18n.setLanguage('hk');
-    } else if(window.location.pathname == "/pt-BR") {
+    } else if(window.location.pathname == "/br") {
         TAPi18n.setLanguage('br');
     } else {
         TAPi18n.setLanguage('en');
