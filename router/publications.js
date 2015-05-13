@@ -21,7 +21,7 @@ if (Meteor.isClient) {
         excerptFunction: function(body) {
             return body.split('.')[0] + '.';
         },
-        pageSize: 10
+        pageSize: 5
     });
 }
 

@@ -1,5 +1,6 @@
 <template name="myBlogIndexTemplate">
-    <img class="blog_logo" src="img/magario/magario-textlogo-navbar.png">
+    > mrt add imgur
+    <img class="blog_logo" src="/img/magario/magario-textlogo-navbar.png">
     <div class="blog_page">
         <link rel="alternate" type="application/rss+xml" title="My blog title" href="/rss/posts">
         <h1>Welcome to Magario Blog</h1>
@@ -9,5 +10,6 @@
                 <div class="post_item_content">{{{excerpt}}}</div>
             </div>
         {{/each}}
+        {{blogPager}}
     </div>
 </template>

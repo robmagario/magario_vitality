@@ -75,6 +75,7 @@ momentjs:moment@2.8.4
 mongo@1.1.0
 mongo-livedata@1.0.8
 mrt:bootstrap-3@0.3.8
+mrt:imgur@0.1.0
 mrt:moment@2.8.1
 mrt:underscore-string-latest@2.3.3
 natestrauser:font-awesome@4.3.0

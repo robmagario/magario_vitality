@@ -16,6 +16,8 @@ if (Meteor.isClient) {
             this.next();
         }
     });*/
+    Router.route("admin_login", {path: "/admin", controller: "LoginController"});
+
     Router.route("video_en", {path: "/", controller: "VideoController"});
     Router.route("video_jp", {path: "/ja-JP", controller: "VideoController"});
     Router.route("video_zh", {path: "/zh-CN", controller: "VideoController"});
@@ -27,7 +29,6 @@ if (Meteor.isClient) {
     Router.route("blog_zh", {path: "/zh-CN/blog", controller: "BlogController"});
     Router.route("blog_hk", {path: "/zh-HK/blog", controller: "BlogController"});
     Router.route("blog_br", {path: "/pt-BR/blog", controller: "BlogController"});
-
 
 }
 
