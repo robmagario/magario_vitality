@@ -1,19 +1,19 @@
 {
   // Navbar Menu
-  "navbar_about":     "關於",
-  "navbar_services":  "服務",
-  "navbar_clients":   "客戶",
-  "navbar_pricing":   "價格",
-  "navbar_blog":      "Blog",
-  "navbar_contact":   "聯絡",
-  "navbar_language":  "語言",
+  "navbar_about":     "关于",
+  "navbar_services":  "服务",
+  "navbar_clients":   "客户",
+  "navbar_pricing":   "价格",
+  "navbar_blog":      "博客",
+  "navbar_contact":   "联络",
+  "navbar_language":  "语言",
 
   // Laguage Selection
-  "language_en":  "英文",
-  "language_jp":  "日文",
-  "language_hk":  "中文(繁)",
-  "language_zh":  "中文(簡)",
-  "language_br":  "葡萄牙語",
+  "language_en":  "English",
+  "language_jp":  "日本語",
+  "language_zh":  "中文（繁体字）",
+  "language_cn":  "中文（简体字）",
+  "language_br":  "Português",
 
   // Brand Name Subtext
   "BrandName":        "Magario",
