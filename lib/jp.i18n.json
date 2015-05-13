@@ -11,8 +11,8 @@
   // Laguage Selection
   "language_en":  "English",
   "language_jp":  "日本語",
-  "language_hk":  "中文（繁体字）",
-  "language_zh":  "中文（简体字）",
+  "language_zh":  "中文（繁体字）",
+  "language_cn":  "中文（简体字）",
   "language_br":  "Português",
 
   // Brand Name Subtext
@@ -20,23 +20,23 @@
   "BrandNameSubtext": "ウェブ制作、SEM/SEO、モバイルアプリ開発",
 
   // About Content
-  "about_header":         "みんなのためのウェブ制作、モバイル、eマーケティング戦略",
+  "about_header":         "もっと身近なITコンサルティングへ",
   "about_header_subtext": "マガリオインターナショナルは、香港に本社を置くウェブコンサルティング会社です。<br>弊社は、最先端の技術や世界トップの高品質を目指し、毎日ウェブ制作、モバイルアプリ開発、SEO/SEMサービスに取り組んでいます。",
   "about_subheader1":     "インターナショナル",
-  "about_subtext1":       "日本人スタッフや外国人スタッフもいますので、多言語サイト制作、多通貨のウェブ制作もネイティブレベルで提供します。",
+  "about_subtext1":       "日本人スタッフや外国人スタッフもいますので、多言語サイト制作、多通貨対応のウェブ制作もネイティブレベルで提供します。",
   "about_subheader2":     "eマーケティング",
-  "about_subtext2":       "お客様のサイトを宣伝するための最新の技術を使用します。ソーシャルメディアやアドワーズ広告の他に意味のあるSEOの技術から",
+  "about_subtext2":       "お客様のサイトを宣伝するための最新のSEO/SEMツールを使用し、ソーシャルメディアやアドワーズ広告の代理サービスも承ります。",
   "about_subheader3":     "モバイル",
-  "about_subtext3":       "我々は、デスクトップからモバイルデバイスへの移行をウェブアプリ作ります。全く新しいプラットフォーム上でオーディエンスを再発見。",
-  "about_subheader4":     "特別な注意",
-  "about_subtext4":       "私たちはクライアントが私たちの完全な注意を受けられるようにする時には、プロジェクトのほんの一握りの上で動作します。効率的な時間枠内でプロジェクト固有のウェブサイト。",
+  "about_subtext3":       "弊社では、モバイルデバイスにもクリアに表示されるサイト開発の他に、ネイティブなモバイルアプリの開発もします。（iOS、アンドロイド対応）",
+  "about_subheader4":     "特別な対応",
+  "about_subtext4":       "完璧なシステムを提供できるために、常にお客様とのヒアリングを行い、バグのないアジャイルなシステム構築に取り組んでいます。",
 
   // Our Team Content
-  "ourteam_header":         "私達のチーム",
-  "ourteam_header_subtext": "私達は私達の間で大規模な人材プールを持つデザイナー、マーケティングの専門家やコンピュータ技術者の友好と決定されたグループ、しています。",
-  "ourteam_img1_name":      "Robson Hayashida",
+  "ourteam_header":         "スタッフ紹介",
+  "ourteam_header_subtext": "スタッフは、直接ホームページを制作・更新・管理しています。デザインや構成、キャッチコピーの作成やサーバーの管理など全般的に行います。",
+  "ourteam_img1_name":      "林田ロブソン",
   "ourteam_img1_pos":       "最高技術責任者",
-  "ourteam_img2_name":      "Todd Katsuyama",
+  "ourteam_img2_name":      "勝山トッド",
   "ourteam_img2_pos":       "最高経営責任者",
   "ourteam_img3_name":      "Abbey Thorley",
   "ourteam_img3_pos":       "電子商取引の副会長",
@@ -46,22 +46,22 @@
   "ourteam_img5_pos":       "ソフトウェア技術者",
 
   // Work with us Content
-  "work_brand_text":  "<span class='quote'>「どのような<span class='text-primary'>技術の設計</span>を分離する<span class='text-primary'>デザイン</span>が...<span class='text-primary'>機能的である</span>ことを意味するということです。」<br><br>― キャメロンモール</span>",
-  "work_button":      "私たちと仕事",
+  "work_brand_text":  "<span class='quote'>「デザインのないマーケティングは<span class='text-primary'>活気がなく、</span>マーケティングの<span class='text-primary'>ない</span>デザイン<span class='text-primary'>は無音である。</span><br><br>― Von R. Glitschka</span>",
+  "work_button":      "お問い合わせ",
 
   // Services Content
   "services_header":            "プロセス",
-  "services_header_subtext":    "ここでは、私たちのプロジェクトのそれぞれに近づく方法の概要です。",
-  "services_subtitle1_header":  "相談します",
-  "services_subtitle1_point":   "<li>無料のクライアントの相談</li><li>ドラフトプロジェクト戦略</li><li>時間の制約を特定</li><li>調査</li>",
+  "services_header_subtext":    "マガリオで使用されているプロセスについて説明します。",
+  "services_subtitle1_header":  "相談",
+  "services_subtitle1_point":   "<li>相談します。初回は無料です。</li><li>プロジェクト戦略を立てます。</li><li>開発時間を特定します。</li><li>調査も実施します。</li>",
   "servives_subtitle2_header":  "ビルド",
-  "services_subtitle2_point":   "<li>ホストとデザインサイト</li><li>エンジニアリングとトラブルシューティング</li><li>顧客に関するご意見</li><li>eマーケティング戦略を作成します</li>",
-  "services_subtitle3_header":  "ランチ",
-  "services_subtitle3_point":   "<li>ウェブサイトをデプロイ</li><li>市場の製品発売</li><li>UXのデータを収集</li><li>四半期ごとのメンテナンス</li>",
+  "services_subtitle2_point":   "<li>ホストとデザインサイト</li><li>エンジニアリングとトラブルシューティング</li><li>モバイルアプリを開発します。</li><li>eマーケティング戦略を作成します</li>",
+  "services_subtitle3_header":  "ラウンチ",
+  "services_subtitle3_point":   "<li>ウェブサイトを公開します。</li><li>市場の製品発売</li><li>UXのデータを収集</li><li>四半期ごとにメンテナンスします。</li>",
 
   // Clients Content
-  "clients_header":         "クライアント",
-  "clients_header_subtext": "ここでは、私達の顧客のために生産しているいくつかのサイトの小さなサンプルです。",
+  "clients_header":         "制作実績",
+  "clients_header_subtext": "お客様とともに築いてきた実績、それが私たちの誇りです。",
   "clients_project1_name":  "Living Alive PR",
   "clients_project1_des":   "クロスプラットフォーム、ウェブデザイン、SEOのマーケティング",
   "clients_project2_name":  "Tanner DeWitt Solicitors",
@@ -74,7 +74,7 @@
 
   // Portfolio Content
   "portfolio_header":         "ポートフォリオ",
-  "portfolio_header_subtext": "ここに私たちの他のプロジェクトの一部です。",
+  "portfolio_header_subtext": "私たちは成功するホームページを導入しています！低価格なのに高機能。サイトを導入したお客様事例をご紹介",
   "portfolio_selection1":     "すべて",
   "portfolio_selection2":     "個人",
   "portfolio_selection3":     "商業",
@@ -87,14 +87,14 @@
   "portfolio_img5":   "Red Doors Studio",
   "portfolio_img6":   "We Are Living Alive",
   "portfolio_img7":   "Stork",
-  "portfolio_img8":   "Hayashida Acupunctura",
-  "portfolio_img9":   "Dance With Style",
+  "portfolio_img8":   "林田鍼灸院",
+  "portfolio_img9":   "ダンス・ウィッズ・スタイル",
   "portfolio_img10":  "Mauve",
   "portfolio_img11":  "Taobao Agente Style",
   "portfolio_img12":  "GWG Holdings",
   // Type
-  "portfolio_type1":  "SEM (Adwords), SEO, Site Maintenance, CSS",
-  "portfolio_type2":  "ウェブデザイン, SEO",
+  "portfolio_type1":  "SEM (Adwords), SEO, メンテナンス, CSS",
+  "portfolio_type2":  "ウェブ制作, SEO",
   "portfolio_type3":  "Javascript Consultation, Specialized Algorithms for Social Media Marketing",
   "portfolio_type4":  "ウェブサイトのデザイン, メンテナンス, SEO",
   "portfolio_type5":  "ウェブデザイン",
@@ -116,7 +116,7 @@
   "saying_item2_pos":   "CEO of Dance With Style and Imagine8",
 
   // Pricing Content
-  "pricing_header":           "プライシング",
+  "pricing_header":           "価格表",
   "pricing_header_subtext":   "正直な価格。プロフェッショナルサービス。ローカル料金。",
   "pricing_subtitle1_header": "eマーケティング",
   "pricing_subtitle1_price":  "<span class='number'><sup></sup>30%</span> / プロジェクト",
@@ -130,11 +130,11 @@
   "pricing_signup_button":    "Sign Up",
 
   // Subscribe Content
-  "subscribe_header": "Subscribe to our newsletter",
-  "subscribe_button": "Subscribe!",
+  "subscribe_header": "メルマガをご購読ください。",
+  "subscribe_button": "登録",
 
   // Contact Us Content
-  "contact_header":         "Contact Us",
+  "contact_header":         "お問い合わせ",
   "contact_header_subtext": "Please tell us about your next project and we will let you know what we can do to help you.",
   // Send
   "contact_name":         "Name",
