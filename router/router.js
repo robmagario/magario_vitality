@@ -21,18 +21,16 @@ if (Meteor.isClient) {
     Router.route("video_zh", {path: "/zh-CN", controller: "VideoController"});
     Router.route("video_hk", {path: "/zh-HK", controller: "VideoController"});
     Router.route("video_br", {path: "/pt-BR", controller: "VideoController"});
+
+    Router.route("blog_en", {path: "/blog", controller: "BlogController"});
+    Router.route("blog_jp", {path: "/ja-JP/blog", controller: "BlogController"});
+    Router.route("blog_zh", {path: "/zh-CN/blog", controller: "BlogController"});
+    Router.route("blog_hk", {path: "/zh-HK/blog", controller: "BlogController"});
+    Router.route("blog_br", {path: "/pt-BR/blog", controller: "BlogController"});
+
+
 }
 
 Router.map(function () {
     //this.route("index", {path: "/", controller: "IndexController"});
 });
-
-
-// JavaScript
-if (Meteor.isServer) {
-    Blog.config({
-        adminRole: 'blogAdmin',
-        authorRole: 'blogAuthor'
-    });
-}
-

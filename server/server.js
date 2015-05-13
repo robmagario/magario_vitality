@@ -11,7 +11,26 @@ Meteor.startup(function() {
     // Password:    mytestforjob830
 	process.env.MAIL_URL = 'smtp://davengfortesting%40meteorize.gmail.com:u3aHyUuelGV6tthci9P0dQ@smtp.mandrillapp.com:587';
 
-	//i18n.setDefaultLanguage('en');
+
+	// Set Roles for admin
+	var user_dave = Meteor.users.findOne({username: 'robmagario'});
+	if(user_dave != null) {
+		Roles.addUsersToRoles(user_dave._id, ['admin']);
+		Roles.addUsersToRoles(user_dave._id, ['blogAdmin']);
+	}var user_dave = Meteor.users.findOne({username: 'abbeythorley'});
+	if(user_dave != null) {
+		Roles.addUsersToRoles(user_dave._id, ['admin']);
+		Roles.addUsersToRoles(user_dave._id, ['blogAdmin']);
+	}var user_dave = Meteor.users.findOne({username: 'Dranithix'});
+	if(user_dave != null) {
+		Roles.addUsersToRoles(user_dave._id, ['admin']);
+		Roles.addUsersToRoles(user_dave._id, ['blogAdmin']);
+	}
+	var user_dave = Meteor.users.findOne({username: 'DaveNg'});
+	if(user_dave != null) {
+		Roles.addUsersToRoles(user_dave._id, ['admin']);
+		Roles.addUsersToRoles(user_dave._id, ['blogAdmin']);
+	}
 });
 
 Meteor.methods({
