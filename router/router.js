@@ -24,13 +24,13 @@ if (Meteor.isClient) {
     Router.route("video_hk", {path: "/hk", controller: "VideoController"});
     Router.route("video_br", {path: "/br", controller: "VideoController"});
 
-    Router.route("blog_en", {path: "/blog", controller: "BlogController"});
+    Router.route("blog_en", {path: "/en/blog", controller: "BlogController"});
     Router.route("blog_jp", {path: "/jp/blog", controller: "BlogController"});
     Router.route("blog_zh", {path: "/cn/blog", controller: "BlogController"});
     Router.route("blog_hk", {path: "/hk/blog", controller: "BlogController"});
     Router.route("blog_br", {path: "/br/blog", controller: "BlogController"});
 
-    Router.route("admin_blog", {path: "/admin/blog", controller: "AdminBlogController"});
+    Router.route("admin_blog", {path: "/admin_blog", controller: "AdminBlogController"});
 }
 
 Router.map(function () {

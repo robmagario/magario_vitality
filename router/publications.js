@@ -7,7 +7,7 @@ if (Meteor.isClient) {
     Meteor.subscribe("post_data");
     Meteor.subscribe("comment_data");
     Meteor.subscribe("config_data");
-    Meteor.subscribe("post_data");
+    Meteor.subscribe("magario_post_data");
     Meteor.subscribe("tag_data");
 
 
@@ -17,6 +17,7 @@ if (Meteor.isClient) {
             useSideComments: true,
             allowAnonymous: true
         },
+        //blogAdminTemplate: 'myBlogAdminTemplate',
         blogIndexTemplate: 'myBlogIndexTemplate',
         blogShowTemplate: 'myShowBlogTemplate',
         blogNotFoundTemplate: 'myNotFoundTemplate',
@@ -42,7 +43,7 @@ if (Meteor.isServer) {
     Meteor.publish("config_data", function () {
         return Blog_config.find();
     });
-    Meteor.publish("post_data", function () {
+    Meteor.publish("magario_post_data", function () {
         return Blog_posts.find();
     });
     Meteor.publish("tag_data", function () {

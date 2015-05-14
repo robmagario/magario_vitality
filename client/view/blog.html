@@ -1,4 +1,7 @@
 <template name="myBlogIndexTemplate">
+    <head>
+        <link rel="alternate" type="application/rss+xml" title="My blog title" href="/rss/posts">
+    </head>
     <img class="blog_logo" src="/img/magario/magario-textlogo-navbar.png">
     <button class="admin_logout">Logout</button>
     {{> disqus this}}
@@ -7,11 +10,17 @@
         <h1>Welcome to Magario Blog</h1>
         {{> upload_bootstrap callbacks=UploadCallback}}
         {{#each posts}}
-            <div class="post_item">
-                <h2>{{title}} <small>Published on {{publishedAt}}</small></h2>
-                <div class="post_item_content">{{{excerpt}}}</div>
-            </div>
+            <a href="/blog/{{slug}}">
+                <div class="post_item">
+                    <h2>{{title}} <small>Published on {{publishedAt}}</small></h2>
+                    <div class="post_item_content">{{{excerpt}}}</div>
+                </div>
+            </a>
         {{/each}}
         {{blogPager}}
     </div>
+</template>
+
+<template name="myShowBlogTemplate">
+    {{> blogShow}}
 </template>
