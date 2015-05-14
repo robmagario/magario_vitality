@@ -11,6 +11,12 @@ Meteor.startup(function() {
     // Password:    mytestforjob830
 	process.env.MAIL_URL = 'smtp://davengfortesting%40meteorize.gmail.com:u3aHyUuelGV6tthci9P0dQ@smtp.mandrillapp.com:587';
 
+	// Upload Configure
+	UploadServer.init({
+		tmpDir: process.env.PWD + '/.uploads/tmp',
+		uploadDir: process.env.PWD + '/.uploads/',
+		checkCreateDirectories: true //create the directories for you
+	})
 
 	// Set Roles for admin
 	var user_dave = Meteor.users.findOne({username: 'robmagario'});
