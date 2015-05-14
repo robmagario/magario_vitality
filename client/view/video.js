@@ -6,6 +6,8 @@ var MyBrowser = "Web";
 Template.Video.rendered = function() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         MyBrowser = "Mobile";
+        $('.dropdown').addClass('dropup');
+        $('.dropdown').removeClass('dropdown');
     } else {
         MyBrowser = "Web";
     }
