@@ -190,20 +190,23 @@ function hide_language_select() {
     $('.language_select').css({display:'none'});
     return '';
 }
+function hide_navbar_dropdown() {
+    $('#bs-example-navbar-collapse-1').removeClass('in');
+}
 
 Template.Video.events({
-    'click .language_en': function() {
-      ChangeLanguage('en');
-    },
-    'click .language_jp': function() {
-        ChangeLanguage('jp');
-    },
-    'click .language_zh': function() {
-        ChangeLanguage('zh');
-    },
-    'click .language_br': function() {
-        ChangeLanguage('br');
-    },
+    'click .click-logo':     function() { hide_navbar_dropdown(); },
+    'click .click-page-top': function() { hide_navbar_dropdown(); },
+    'click .click-about':    function() { hide_navbar_dropdown(); },
+    'click .click-services': function() { hide_navbar_dropdown(); },
+    'click .click-clients':  function() { hide_navbar_dropdown(); },
+    'click .click-pricing':  function() { hide_navbar_dropdown(); },
+    'click .click-contact':  function() { hide_navbar_dropdown(); },
+
+    'click .language_en': function() { ChangeLanguage('en'); },
+    'click .language_jp': function() { ChangeLanguage('jp'); },
+    'click .language_zh': function() { ChangeLanguage('zh'); },
+    'click .language_br': function() { ChangeLanguage('br'); },
     'focus .dropdown_language': function() {
         $('.language_select').css({display:'block'});
     },

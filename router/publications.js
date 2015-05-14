@@ -5,6 +5,10 @@
 if (Meteor.isClient) {
     Meteor.subscribe("user_data");
     Meteor.subscribe("post_data");
+    Meteor.subscribe("comment_data");
+    Meteor.subscribe("config_data");
+    Meteor.subscribe("post_data");
+    Meteor.subscribe("tag_data");
 
 
     Blog.config({
@@ -31,6 +35,18 @@ if (Meteor.isServer) {
     });
     Meteor.publish("post_data", function () {
         //return Meteor.posts.find({});
+    });
+    Meteor.publish("comment_data", function () {
+        return Blog_comments.find();
+    });
+    Meteor.publish("config_data", function () {
+        return Blog_config.find();
+    });
+    Meteor.publish("post_data", function () {
+        return Blog_posts.find();
+    });
+    Meteor.publish("tag_data", function () {
+        return Blog_tags.find();
     });
 
     Blog.config({

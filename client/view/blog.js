@@ -23,5 +23,13 @@ Template.myBlogIndexTemplate.events({
 });
 
 Template.myBlogIndexTemplate.helpers({
-
+    UploadCallback: function() {
+        return {
+            finished: function(index, fileInfo, context) {
+                console.log(index);
+                console.log(fileInfo);
+                console.log(context);
+            }
+        }
+    }
 });
