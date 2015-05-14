@@ -187,7 +187,7 @@ function ChangeLanguage(_language) {
 }
 
 function hide_language_select() {
-    $('.language_select').hide();
+    $('.language_select').css({display:'none'});
     return '';
 }
 
@@ -205,7 +205,7 @@ Template.Video.events({
         ChangeLanguage('br');
     },
     'focus .dropdown_language': function() {
-        $('.language_select').show();
+        $('.language_select').css({display:'block'});
     },
     'blur .dropdown_language': function() {
         window.setTimeout(hide_language_select, 500);
