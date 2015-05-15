@@ -143,7 +143,7 @@
   "contact_message":      "メッセージの内容",
   "contact_send_button":  "送信",
   // Facebook
-  "contact_facebook": "是非マガリオのFacebookページに「いいね」を押してください。",
+  "contact_facebook": "是非マガリオのFacebook<br>ページに「いいね」を<br>押してください。",
   // Sub Title
   "contact_subtitle1_header":   "電話番号",
   "contact_subtitle1_text":     "+852 6818 3401",
