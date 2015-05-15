@@ -1,4 +1,4 @@
-Template.myBlogAdminTemplate.rendered = function() {
+/*Template.myBlogAdminTemplate.rendered = function() {
     console.log("!!!!!");
 };
 
@@ -6,7 +6,7 @@ Template.myBlogAdminTemplate.events({
     'onCgange .abc': function() {
 
     }
-});
+});*/
 
 Template.blogAdminEdit.rendered = function() {
 }

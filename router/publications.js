@@ -37,7 +37,7 @@ if (Meteor.isServer) {
     Meteor.publish("post_data", function () {
         //return Meteor.posts.find({});
     });
-    Meteor.publish("comment_data", function () {
+    /*Meteor.publish("comment_data", function () {
         return Blog_comments.find();
     });
     Meteor.publish("config_data", function () {
@@ -48,7 +48,7 @@ if (Meteor.isServer) {
     });
     Meteor.publish("tag_data", function () {
         return Blog_tags.find();
-    });
+    });*/
 
     Blog.config({
         adminRole: 'blogAdmin',
