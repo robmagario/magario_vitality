@@ -33,3 +33,7 @@ Template.myBlogIndexTemplate.helpers({
         }
     }
 });
+
+Template.myShowBlogTemplate.rendered = function() {
+    $('#meteor-blog').css({'padding-top':'40px'});
+};
