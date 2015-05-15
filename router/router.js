@@ -30,7 +30,7 @@ if (Meteor.isClient) {
     Router.route("blog_hk", {path: "/hk/blog", controller: "BlogController"});
     Router.route("blog_br", {path: "/br/blog", controller: "BlogController"});
 
-    Router.route("admin_blog", {path: "/admin_blog", controller: "AdminBlogController"});
+    Router.route("admin_image", {path: "/admin/image", controller: "ImageController"});
 }
 
 Router.map(function () {

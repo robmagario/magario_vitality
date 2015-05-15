@@ -17,7 +17,8 @@ if (Meteor.isClient) {
             useSideComments: true,
             allowAnonymous: true
         },
-        //blogAdminTemplate: 'myBlogAdminTemplate',
+        blogAdminTemplate: 'myBlogAdminTemplate',
+        blogAdminEditTemplate: 'myBlogAdminEdit',
         blogIndexTemplate: 'myBlogIndexTemplate',
         blogShowTemplate: 'myShowBlogTemplate',
         blogNotFoundTemplate: 'myNotFoundTemplate',

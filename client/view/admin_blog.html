@@ -1,0 +1,148 @@
+<template name="myBlogAdminTemplate">
+    <div id="blog-admin">
+        <div class="container blog-admin-index">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Blog Admin</h1>
+                </div>
+                <div class="col-md-9">
+                    <a href="#" class="for-new-blog btn btn-default">
+                        <i class="fa fa-plus"></i> Add Blog Post
+                    </a>
+                    <a href="#" class="for-image btn btn-default">
+                        Image Handle
+                    </a>
+                    <select class="for-filtering form-control">
+                        <option value="all">All Posts</option>
+                        <option value="mine">My Posts</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{#if posts}}
+                        {{> reactiveTable collection=posts settings=table}}
+                    {{else}}
+                        <a href="#" class="for-new-blog">Create the first blog</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="myImageHandleTemplate">
+    <div id="blog-admin">
+        <div class="container blog-admin-index">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Image Admin</h1>
+                </div>
+                <div class="col-md-9">
+                    <a href="#" class="for-new-blog btn btn-default">
+                        <i class="fa fa-plus"></i> Add Image
+                    </a>
+                    <select class="for-filtering form-control">
+                        <option value="all">All Image</option>
+                        <option value="mine">My Image</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{#if images}}
+                        {{> reactiveTable collection=images settings=table}}
+                    {{else}}
+                        <a href="#" class="for-new-blog">Create the first image</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="myBlogAdminEdit">
+    {{> notifications}}
+    <div id="blog-admin">
+        <div class="container blog-admin-edit">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>
+                        <strong>Edit Post Testing</strong>
+                    </h1>
+
+                    {{#with post}}
+                        <form>
+                            <div class="row form-group">
+                                <div class="col-md-9">
+                                    <label>Title</label>
+                                    <input tabindex="1" type="text" class="form-control" name="title" placeholder="Title" value="{{title}}">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-4">
+                                    <label>Tags</label>
+                                    <input tabindex="2" type="text" class="form-control" name="tags" placeholder="Type in a tag & hit enter" value="{{joinTags tags}}" data-role="tagsinput">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Slug</label>
+                                    <input type="text" class="form-control" name="slug" placeholder="Slug" value="{{slug}}">
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Meta Description</label>
+                                    <input type="text" class="form-control" name="description" placeholder="Meta Description" value="{{description}}">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label>Body</label>
+                                    <div class="edit-mode">
+                                        <a href="#" class="selected visual-toggle">Visual</a>
+                                        -
+                                        <a href="#" class="html-toggle">HTML</a>
+                                    </div>
+                                    <textarea hidden class="html-editor col-xs-12"></textarea>
+                                    <div class="editable" tabindex="3"></div>
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fa fa-save"></i> Save
+                                    </button>
+                                    <a href="{{pathFor 'blogAdmin'}}" class="btn btn-default">
+                                        <i class="fa fa-ban"></i> Cancel
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    {{/with}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="myNotFoundTemplate">
+    <p>404 Not Found</p>
+</template>
+
+<template name="myUploadFileTemplate">
+    {{> upload_bootstrap callbacks=UploadCallback}}
+
+    <label class="btn btn-info" for="input-featured-image">
+        {{#if featuredImage}}
+            {{featuredImageName}}
+        {{else}}
+            Select File
+        {{/if}}
+    </label>
+    <div class="col-md-3">
+        <label for="featured-image">Featured Image</label>
+        <input type="file" id="input-featured-image" name="featured-image" class="hidden">
+        <p class="help-block">
+        <div class="checkbox">
+            <label for="background-title">
+                <input type="checkbox" name="background-title" checked="{{#if titleBackground}}checked{{/if}}"> Use as background for title
+            </label>
+        </div>
+        </p>
+    </div>
+</template>
