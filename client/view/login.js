@@ -14,7 +14,7 @@ Template.AdminLogin.events({
                 });
                 return false;
             } else {
-                window.alert("Missing Somethine! Please fill all column!");
+                window.alert("Please fill in all columns.");
             }
         }
 });

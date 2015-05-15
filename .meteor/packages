@@ -17,7 +17,6 @@ perak:user-roles
 reactive-dict
 nemo64:bootstrap
 aldeed:autoform
-ryw:blog
 alanning:roles
 accounts-password
 accounts-ui
@@ -26,3 +25,4 @@ tap:i18n
 mrt:bootstrap-3
 tomi:upload-server
 tomi:upload-jquery
+ryw:blog
