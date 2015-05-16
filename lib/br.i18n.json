@@ -39,13 +39,13 @@
   "ourteam_img2_name":      "Todd Katsuyama",
   "ourteam_img2_pos":       "CEO",
   "ourteam_img3_name":      "Abbey Thorley",
-  "ourteam_img3_pos":       "Vice-President of eCommerce",
+  "ourteam_img3_pos":       "eCommerce, Javascript and Social Network Specialist",
   "ourteam_img4_name":      "Hemant Sureshkumar",
   "ourteam_img4_pos":       "Software Engineer",
   "ourteam_img5_name":      "Dave Ng",
   "ourteam_img5_pos":       "Software Engineer",
   "ourteam_img6_name":      "Kenta Iwasaki",
-  "ourteam_img6_pos":       "",
+  "ourteam_img6_pos":       "Software Engineer",
 
   // Work with us Content
   "work_brand_text":  "<span class='quote'>“O que separa o <span class='text-primary'>design</span> da <span class='text-primary'>arte</span> é que o design precisa ser... <span class='text-primary'>funcional</span>.”<br><br>― Cameron Moll</span>",
