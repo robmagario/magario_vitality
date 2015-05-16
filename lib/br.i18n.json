@@ -44,6 +44,8 @@
   "ourteam_img4_pos":       "Software Engineer",
   "ourteam_img5_name":      "Dave Ng",
   "ourteam_img5_pos":       "Software Engineer",
+  "ourteam_img6_name":      "Kenta Iwasaki",
+  "ourteam_img6_pos":       "",
 
   // Work with us Content
   "work_brand_text":  "<span class='quote'>“O que separa o <span class='text-primary'>design</span> da <span class='text-primary'>arte</span> é que o design precisa ser... <span class='text-primary'>funcional</span>.”<br><br>― Cameron Moll</span>",
