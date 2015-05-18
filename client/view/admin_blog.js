@@ -45,6 +45,12 @@ Template.myBlogAdminTemplate.events({
             filters.userId = Meteor.userId();
         }
         Session.set('filters', filters);
+    },
+
+    // Admin Logout
+    'click .for-admin-logout': function() {
+        Meteor.logout();
+        window.location.reload();
     }
 });
 

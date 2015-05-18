@@ -1,0 +1,74 @@
+<template name="myShowBlogTemplate">
+  {{> blog_each_navbar}}
+  {{> myBlogShowTemplate}}
+</template>
+
+<template name="myBlogShowTemplate">
+    <div id="meteor-blog" class="blog-single">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-11 col-md-8 col-md-offset-2">
+                  {{> myBlogShowBody}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="myBlogShowBody"><article class="post">
+  {{#unless titleBackground}}
+      <h1 class="mb-title text-center">
+        {{title}}
+      </h1>
+      <div class="post-meta text-center">
+        {{#if isAdmin}}
+            <small><a href="#" id="edit-post">edit</a></small>
+            --
+        {{/if}}
+          By {{authorName}} on {{blogFormatDate publishedAt}}
+        {{> blogTags }}
+      </div>
+  {{/unless}}
+    <div id="commentable-area" class="the-content" style="display:inline-block;">
+      {{{html}}}
+    </div>
+</article>
+    <div class="blog-back-link pull-left">
+        <a href="{{pathFor 'blogIndex'}}"><i class="fa fa-caret-left"></i>Back to the Blog</a>
+    </div>
+  {{> shareit}}
+  {{> disqus this}}
+</template>
+
+<template name="blog_each_navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll click-logo">
+                    <img src="/img/magario/magario logo w text transparent.png" class="img-responsive" alt="" style="height:48px; top:-15px; position:relative;">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll click-page-top" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll click-about" href="/blog">Magario Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+</template>
