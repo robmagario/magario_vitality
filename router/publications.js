@@ -14,8 +14,8 @@ if (Meteor.isClient) {
     Blog.config({
         comments: {
             disqusShortname: 'myshortname',
-            useSideComments: true,
-            allowAnonymous: true
+            useSideComments: false,
+            allowAnonymous: false
         },
         blogAdminTemplate: 'myBlogAdminTemplate',
         blogAdminEditTemplate: 'myBlogAdminEdit',
