@@ -55,7 +55,7 @@
   "services_header":            "Process",
   "services_header_subtext":    "Here is an overview of how we approach each of our projects.",
   "services_subtitle1_header":  "Consult",
-  "services_subtitle1_point":   "<li>free client consultation</li><li>draft project strategy</li><li>pinpoint time constraints</li><li>research</li>",
+  "services_subtitle1_point":   "<li>free first consultation</li><li>draft project strategy</li><li>pinpoint time constraints</li><li>research</li>",
   "servives_subtitle2_header":  "Build",
   "services_subtitle2_point":   "<li>host and design site</li><li>engineering and troubleshooting</li><li>client feedback</li><li>create eMarketing strategies</li>",
   "services_subtitle3_header":  "Launch",
@@ -129,7 +129,7 @@
   "pricing_subtitle3_header": "Media Production",
   "pricing_subtitle3_price":  "<span class='number'><sup>$</sup>4000</span> / hour",
   "pricing_subtitle3_item":   "<li class='list-group-item'>Professional Video Equipment</li><li class='list-group-item'>Final Cut Editing</li><li class='list-group-item'>Choreography & Design</li><li class='list-group-item'>Youtube Marketing</li><li class='list-group-item'>Posters, Flyers, Logos</li><li class='list-group-item'><strong>Free Consultations</strong></li>",
-  "pricing_signup_button":    "Sign Up",
+  "pricing_signup_button":    "contact now",
 
   // Subscribe Content
   "subscribe_header": "Subscribe to our newsletter",
