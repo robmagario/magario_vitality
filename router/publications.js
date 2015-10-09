@@ -50,7 +50,7 @@ if (Meteor.isServer) {
     Meteor.publish("tag_data", function () {
         return Blog_tags.find();
     });*/
-
+/*
     Blog.config({
         adminRole: 'blogAdmin',
         authorRole: 'blogAuthor',
@@ -59,4 +59,5 @@ if (Meteor.isServer) {
             description: 'My blog description'
         }
     });
+    */
 }

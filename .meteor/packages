@@ -24,7 +24,6 @@ tap:i18n
 mrt:bootstrap-3
 tomi:upload-server
 tomi:upload-jquery
-ryw:blog
 standard-minifiers
 meteor-base
 mobile-experience
