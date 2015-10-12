@@ -52,13 +52,13 @@
 
   // Platforms Content
   "platforms_header":            "開発環境",
-  "platforms_header_subtext":    "We make use of the latest trends in technology to best serve you and your needs.",
+  "platforms_header_subtext":    "私たちは、最新の技術を使ってお客様のご要望に応えます。",
   "platforms_subtitle1_header":  "Wordpress and MySQL",
-  "platforms_subtitle1_point":   "<li>HP Troubleshooting </li><li>CSS related issues</li><li>Migration issues</li><li>Theme Creation</li>",
+  "platforms_subtitle1_point":   "<li>Webトラブルシューティング</li><li>CSS関連</li><li>システム移行</li><li>テーマ作成</li>",
   "platforms_subtitle2_header":  "Meteor JS",
-  "platforms_subtitle2_point":   "<li>Creation from scratch</li><li>Maintenance</li><li>Mongo DB troubleshooting</li><li>Internationalization</li>",
+  "platforms_subtitle2_point":   "<li>ゼロからの構築</li><li>システム移行</li><li>モンゴデータベーストラブルシューティング</li><li>国際化と地域化</li>",
   "platforms_subtitle3_header":  "Ionic JS for Mobile",
-  "platforms_subtitle3_point":   "<li>cross-platform</li><li>Migration of apps</li><li>Meteor Integration</li><li>eCommerce apps</li>",
+  "platforms_subtitle3_point":   "<li>クロスプラットフォーム</li><li>アプリのシステム移行</li><li>メテオ統合</li><li>Eコマースアプリケーション</li>",
 
 
 
