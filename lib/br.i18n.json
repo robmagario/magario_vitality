@@ -1,6 +1,7 @@
 {
   // Navbar Menu
   "navbar_about":     "Sobre",
+  "navbar_platforms":  "Plataformas",
   "navbar_services":  "Serviços",
   "navbar_clients":   "Clientes",
   "navbar_pricing":   "Preços",
@@ -14,6 +15,19 @@
   "language_hk":  "中文（繁）",
   "language_zh":  "中文（简）",
   "language_br":  "Português",
+
+
+  // Platforms Content
+  "platforms_header":            "Plataforms",
+  "platforms_header_subtext":    "Usamos as mais recentes tecnologias do mercado para forcecer um melhor atendimento e acabamento.",
+  "platforms_subtitle1_header":  "Wordpress e MySQL",
+  "platforms_subtitle1_point":   "<li>Conserto de bugs no site </li><li>Problemas com CSS</li><li>Migração de dados</li><li>Criação de tema</li>",
+  "platforms_subtitle2_header":  "Meteor JS",
+  "platforms_subtitle2_point":   "<li>Desenvolvimento</li><li>Manutenção</li><li>Mongo DB</li><li>Internacionalização</li>",
+  "platforms_subtitle3_header":  "Ionic JS para Mobile",
+  "platforms_subtitle3_point":   "<li>cross-plataforma</li><li>Migração de apps</li><li>Integração com Meteor</li><li>eCommerce apps</li>",
+
+
 
   // Brand Name Subtext
   "BrandName":        "Magario",

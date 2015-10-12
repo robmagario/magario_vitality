@@ -4,6 +4,7 @@
 var MyBrowser = "Web";
 
 Template.Video.rendered = function() {
+
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         MyBrowser = "Mobile";
         $('.dropdown').addClass('dropup');
@@ -13,7 +14,7 @@ Template.Video.rendered = function() {
     }
     //window.alert('You are using ' + MyBrowser);
     /*TEMPLATE_RENDERED_CODE*/
-    // Nideo Settings
+    // Video Settings
     $("header.video").wallpaper({
         source: {
             poster: "/img/bg-mobile-fallback.jpg",

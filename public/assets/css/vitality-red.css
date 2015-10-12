@@ -3,6 +3,18 @@
  * Copyright 2013-2015 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
+
+.hero-content {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  color: #FBF4FF;
+  margin: 0;
+  padding: 0;
+  line-height: 48px;
+}
+
+
+
 html,
 body {
   height: 100%;
@@ -250,6 +262,7 @@ hr.colored {
   }
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
+    /* background: black;*/
     background: transparent;
     border: none;
   }

@@ -1,6 +1,7 @@
 {
   // Navbar Menu
   "navbar_about":     "会社案内",
+  "navbar_platforms":  "開発環境",
   "navbar_services":  "サービス",
   "navbar_clients":   "制作実績",
   "navbar_pricing":   "価格表",
@@ -48,6 +49,18 @@
   // Work with us Content
   "work_brand_text":  "<span class='quote'>「デザインのないマーケティングは<span class='text-primary'>活気なく、</span>マーケティングの<span class='text-primary'>ない</span>デザイン<span class='text-primary'>は無音である。</span><br><br>― Von R. Glitschka</span>",
   "work_button":      "お問い合わせ",
+
+  // Platforms Content
+  "platforms_header":            "開発環境",
+  "platforms_header_subtext":    "We make use of the latest trends in technology to best serve you and your needs.",
+  "platforms_subtitle1_header":  "Wordpress and MySQL",
+  "platforms_subtitle1_point":   "<li>HP Troubleshooting </li><li>CSS related issues</li><li>Migration issues</li><li>Theme Creation</li>",
+  "platforms_subtitle2_header":  "Meteor JS",
+  "platforms_subtitle2_point":   "<li>Creation from scratch</li><li>Maintenance</li><li>Mongo DB troubleshooting</li><li>Internationalization</li>",
+  "platforms_subtitle3_header":  "Ionic JS for Mobile",
+  "platforms_subtitle3_point":   "<li>cross-platform</li><li>Migration of apps</li><li>Meteor Integration</li><li>eCommerce apps</li>",
+
+
 
   // Services Content
   "services_header":            "プロセス",

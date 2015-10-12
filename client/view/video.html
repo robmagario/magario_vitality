@@ -1,61 +1,13 @@
-<head>
-    <title>Magario Web Design and eMarketing Specialists</title>
 
-    <!-- Classic Meta Tags -->
-    <meta name="description" content="Magario International is a web consultancy firm based in Hong Kong.
-We create sleek and beautiful websites and send it to the world, from personal blogs to corporate databases."/>
-    <meta name="viewport" content="initial-scale=1.0"/>
-    <meta charset="UTF-8">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Magario Web Design and eMarketing Specialists"/>
-    <meta property="og:description" content="Customized designs and Facebook compatible development for websites"/>
-    <meta property="og:site_name" content="Magario International Company Limited"/>
-    <meta property="og:url" content="http://magario.com/"/>
-    <meta property="og:image" content="http://magario.com/img/magario/magario_logo_large.png"/>
-    <meta property="fb:admins" content="100006090000201"/>
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="Magario Web Design and eMarketing Specialists"/>
-    <meta name="twitter:description" content="Customized designs and Twitter compatible development for websites"/>
-    <meta name="twitter:image" content="http://magario.com/img/magario/magario_logo_large.png"/>
-    <meta name="twitter:site" content="@robmagario"/>
-    <meta name="twitter:creator" content="@robmagario"/>
-</head>
 <template name="Video">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <!-- Retina.js - Load first for faster HQ mobile images. -->
-    <script src="assets/js/plugins/retina/retina.min.js"></script>
-    <!-- Font Awesome -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- Default Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
-    <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
-    <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
-    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
-    <!-- Plugin CSS -->
-    <link href="assets/css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins/animate.css" rel="stylesheet" type="text/css">
-    <!-- Vitality Theme CSS -->
-    <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css">
+{{> Index2}}
 
-    {{> Navbar}}
-    {{> VideoBG}}
     {{> About}}
     {{> OurTeam}}
     {{> Work}}
     {{> Service}}
+    {{> Platforms}}
     {{> Client}}
     {{> Portfolio}}
     {{> Saying}}
@@ -442,7 +394,7 @@ We create sleek and beautiful websites and send it to the world, from personal b
 
 </template>
 <template name="Navbar">
-    <!-- Navigation -->
+   <!-- Navigation -->
     <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
     <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
         <div class="container">
@@ -462,14 +414,17 @@ We create sleek and beautiful websites and send it to the world, from personal b
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a class="page-scroll click-page-top" href="#page-top"></a>
+                    <li>
+                        <a class="page-scroll click-page-top" href="/">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll click-about" href="#about">{{_ "navbar_about"}}</a>
                     </li>
                     <li>
                         <a class="page-scroll click-services" href="#services">{{_ "navbar_services"}}</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll click-platforms" href="#platforms">{{_ "navbar_platforms"}}</a>
                     </li>
                     <li>
                         <a class="page-scroll click-clients" href="#clients">{{_ "navbar_clients"}}</a>
@@ -560,7 +515,7 @@ We create sleek and beautiful websites and send it to the world, from personal b
     </section>
 </template>
 <template name="OurTeam">
-    <section class="bg-gray">
+    <section id = "our_team" class="bg-gray">
         <div class="container text-center wow fadeIn">
             <div class="row">
                 <div class="col-lg-12">
@@ -698,6 +653,64 @@ We create sleek and beautiful websites and send it to the world, from personal b
             </div>
         </div>
     </aside>
+</template>
+<template name="Platforms">
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h2>{{_ "platforms_header"}}</h2>
+                    <hr class="colored">
+                    <p>{{_ "platforms_header_subtext"}}</p>
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-clipboard"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{_ "platforms_subtitle1_header"}}</h3>
+                            <ul>
+                                {{{_ "platforms_subtitle1_point"}}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{{_ "platforms_subtitle2_header"}}}</h3>
+                            <ul>
+                                {{{_ "platforms_subtitle2_point"}}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">{{_ "platforms_subtitle3_header"}}</h3>
+                            <ul>
+                                {{{_ "platforms_subtitle3_point"}}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 wow fadeIn">
+                <hr class="colored">
+                <p>We are proud to be one of a few Hong Kong companies that mainly develop sites and mobile apps using Meteor JS.</p>
+            </div>
+        </div>
+    </section>
 </template>
 <template name="Service">
     <section id="services" class="services">

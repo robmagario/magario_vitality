@@ -3,6 +3,7 @@
  */
 Template.Index.rendered = function() {
     /*TEMPLATE_RENDERED_CODE*/
+
 };
 
 Template.Index.events({
