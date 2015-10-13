@@ -4,6 +4,59 @@
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
 
+#why-meteor {
+    padding-top:0px;
+}
+em.highlight {
+    font-style: normal;
+    color: #df6826;
+    font-weight: 400;
+}
+
+.second-paragraph {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.second-header {
+    border-left: 5px solid #df6826;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    text-align: left;
+    font-size: 44px;
+    font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+    color: inherit;
+    word-spacing: 0.2em;
+    display: block;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+p {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.42857143;
+    color: #1d2937;
+}
+
+.lead  {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+
 .hero-content {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 50px;
@@ -11,6 +64,9 @@
   margin: 0;
   padding: 0;
   line-height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 
@@ -125,12 +181,7 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
-p.lead {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 24px;
-}
+
 h1,
 h2,
 h3,

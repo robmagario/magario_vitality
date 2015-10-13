@@ -8,6 +8,18 @@ FlowRouter.route( '/', {
     },
 
 });
+
+FlowRouter.route( '/services', {
+    action: function() {
+        BlazeLayout.render( 'rootLayout', {
+            navbar: 'Navbar',
+            main: 'services'
+
+        });
+    },
+
+});
+
 FlowRouter.route( '/jp', {
     action: function() {
         BlazeLayout.render( 'rootLayout', {
