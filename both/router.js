@@ -20,6 +20,17 @@ FlowRouter.route( '/services', {
 
 });
 
+FlowRouter.route( '/process', {
+    action: function() {
+        BlazeLayout.render( 'rootLayout', {
+            navbar: 'Navbar',
+            main: 'process'
+
+        });
+    },
+
+});
+
 FlowRouter.route( '/jp', {
     action: function() {
         BlazeLayout.render( 'rootLayout', {
