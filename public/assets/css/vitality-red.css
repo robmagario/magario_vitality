@@ -3,7 +3,28 @@
  * Copyright 2013-2015 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
+.hcventer{
+    text-align: center;
+}
+.processPage .container-fluid .text-center button{
+    font-size: 28px;
+    width: 360px;
+    padding: 18px 30px 12px 30px;
+    color: #1d2937;
+    background-color: #ffffff;
+    border-color: #1d2937;
+}
+.processPage .container-fluid img{
+    height: auto;
+    width: 100%;
+}
+.processPage .container-fluid img.right{
+    float:right;
+}
+.processPage .container-fluid .imgCol4 img{
+    width: 30%;
 
+}
 #why-meteor {
     padding-top:0px;
 }
@@ -21,7 +42,7 @@ em.highlight {
     -webkit-margin-end: 0px;
 }
 
-.second-header {
+.second-header,.centerHeader {
     text-transform: uppercase;
     border-left: 5px solid #df6826;
     padding-left: 20px;
@@ -40,7 +61,10 @@ em.highlight {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-
+.centerHeader {
+    text-align: center;
+    border: 0;
+}
 p {
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 20px;
