@@ -3,9 +3,9 @@
  */
 var MyBrowser = "Web";
 
-Template.Video.rendered = function() {
+Template.Video.rendered = function () {
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         MyBrowser = "Mobile";
         $('.dropdown').addClass('dropup');
         $('.dropdown').removeClass('dropdown');
@@ -64,10 +64,10 @@ Template.Video.rendered = function() {
     });
 
     /*// Scrollspy: Highlights the navigation menu items while scrolling.
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })*/
+     $('body').scrollspy({
+     target: '.navbar-fixed-top',
+     offset: 51
+     })*/
 
     // Magnific Popup jQuery Lightbox Gallery Settings
     $('.gallery-link').magnificPopup({
@@ -89,23 +89,23 @@ Template.Video.rendered = function() {
     });
 
     /*// Scrollspy: Highlights the navigation menu items while scrolling.
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })*/
+     $('body').scrollspy({
+     target: '.navbar-fixed-top',
+     offset: 51
+     })*/
 
     // Activates floating label headings for the contact form.
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+    $("body").on("input propertychange", ".floating-label-form-group", function (e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
+    }).on("focus", ".floating-label-form-group", function () {
         $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
+    }).on("blur", ".floating-label-form-group", function () {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
 
     // Portfolio Filtering Scripts & Hover Effect
     var filterList = {
-        init: function() {
+        init: function () {
 
             // MixItUp plugin
             // http://mixitup.io
@@ -119,11 +119,11 @@ Template.Video.rendered = function() {
             });
 
         },
-        hoverEffect: function() {
+        hoverEffect: function () {
 
             // Simple parallax effect
             $('#portfoliolist .portfolio').hover(
-                function() {
+                function () {
                     $(this).find('.caption').stop().animate({
                         bottom: 0
                     }, 200, 'easeOutQuad');
@@ -131,7 +131,7 @@ Template.Video.rendered = function() {
                         top: -20
                     }, 300, 'easeOutQuad');
                 },
-                function() {
+                function () {
                     $(this).find('.caption').stop().animate({
                         bottom: -75
                     }, 200, 'easeInQuad');
@@ -145,13 +145,13 @@ Template.Video.rendered = function() {
 
     filterList.init();
     var path_check = window.location.pathname;
-    if(window.location.pathname == "/jp") {
+    if (window.location.pathname == "/jp") {
         TAPi18n.setLanguage('jp');
-    } else if(window.location.pathname == "/cn") {
+    } else if (window.location.pathname == "/cn") {
         TAPi18n.setLanguage('zh');
-    } else if(window.location.pathname == "/hk") {
+    } else if (window.location.pathname == "/hk") {
         TAPi18n.setLanguage('hk');
-    } else if(window.location.pathname == "/br") {
+    } else if (window.location.pathname == "/br") {
         TAPi18n.setLanguage('br');
     } else {
         TAPi18n.setLanguage('en');
@@ -161,7 +161,7 @@ Template.Video.rendered = function() {
 };
 
 function mytesting() {
-    if(window.pageYOffset < (window.innerHeight-150)) {
+    if (window.pageYOffset < (window.innerHeight - 150)) {
         $('.navbar').addClass('navbar-expanded');
     } else {
         $('.navbar').removeClass('navbar-expanded');
@@ -179,7 +179,7 @@ function mytesting() {
 }(jQuery);
 
 function ChangeLanguage(_language) {
-    if(_language == 'en') {
+    if (_language == 'en') {
         //location.href('/');
         window.location.pathname = '';
     } else {
@@ -190,7 +190,7 @@ function ChangeLanguage(_language) {
 }
 
 function hide_language_select() {
-    $('.language_select').css({display:'none'});
+    $('.language_select').css({display: 'none'});
     return '';
 }
 function hide_navbar_dropdown() {
@@ -198,32 +198,54 @@ function hide_navbar_dropdown() {
 }
 
 Template.Video.events({
-    'click .click-logo':     function() { hide_navbar_dropdown(); },
-    'click .click-page-top': function() { hide_navbar_dropdown(); },
-    'click .click-about':    function() { hide_navbar_dropdown(); },
-    'click .click-services': function() { hide_navbar_dropdown(); },
-    'click .click-clients':  function() { hide_navbar_dropdown(); },
-    'click .click-pricing':  function() { hide_navbar_dropdown(); },
-    'click .click-contact':  function() { hide_navbar_dropdown(); },
-
-    'click .language_en': function() { ChangeLanguage('en'); },
-    'click .language_jp': function() { ChangeLanguage('jp'); },
-    'click .language_zh': function() { ChangeLanguage('zh'); },
-    'click .language_br': function() { ChangeLanguage('br'); },
-    'focus .dropdown_language': function() {
-        $('.language_select').css({display:'block'});
+    'click .click-logo': function () {
+        hide_navbar_dropdown();
     },
-    'blur .dropdown_language': function() {
+    'click .click-page-top': function () {
+        hide_navbar_dropdown();
+    },
+    'click .click-about': function () {
+        hide_navbar_dropdown();
+    },
+    'click .click-services': function () {
+        hide_navbar_dropdown();
+    },
+    'click .click-clients': function () {
+        hide_navbar_dropdown();
+    },
+    'click .click-pricing': function () {
+        hide_navbar_dropdown();
+    },
+    'click .click-contact': function () {
+        hide_navbar_dropdown();
+    },
+
+    'click .language_en': function () {
+        ChangeLanguage('en');
+    },
+    'click .language_jp': function () {
+        ChangeLanguage('jp');
+    },
+    'click .language_zh': function () {
+        ChangeLanguage('zh');
+    },
+    'click .language_br': function () {
+        ChangeLanguage('br');
+    },
+    'focus .dropdown_language': function () {
+        $('.language_select').css({display: 'block'});
+    },
+    'blur .dropdown_language': function () {
         window.setTimeout(hide_language_select, 500);
     },
 
-    'click .contact_send_button': function() {
+    'click .contact_send_button': function () {
         console.log("Start");
         var _name = $('.contact_send_name').val();
         var _email = $('.contact_send_email').val();
         var _phone = $('.contact_send_phone').val();
         var _message = $('.contact_send_message').val();
-        if(_name != "" && _email != "" && _phone != "" && _message != "") {
+        if (_name != "" && _email != "" && _phone != "" && _message != "") {
             console.log("To Send");
             var _body =
                 "Name:\t" + _name + "\n" +
@@ -247,18 +269,26 @@ Template.Video.events({
         } else {
             console.log("To Error");
             var _error = "";
-            if(_name == "") {_error += "Please enter a name so we know you're not a robot.\n";}
-            if(_email == "") {_error += "Please enter your email so we can contact you.\n";}
-            if(_phone == "") {_error += "Please enter a phone number so we can contact you.\n";}
-            if(_message == "") {_error += "Please drop us a message. What services would you like to enquire?\n";}
+            if (_name == "") {
+                _error += "Please enter a name so we know you're not a robot.\n";
+            }
+            if (_email == "") {
+                _error += "Please enter your email so we can contact you.\n";
+            }
+            if (_phone == "") {
+                _error += "Please enter a phone number so we can contact you.\n";
+            }
+            if (_message == "") {
+                _error += "Please drop us a message. What services would you like to enquire?\n";
+            }
             window.alert(_error);
         }
     },
 
-    'click a.page-scroll': function(event) {
+    'click a.page-scroll': function (event) {
         Helpers.Log.Show("Click", "a.page-scroll");
         var _tag = event.target.hash.split('#');
-        if(_tag.length > 1) {
+        if (_tag.length > 1) {
             var tagname = _tag[1].toLowerCase();
             var targetY = 0;
             if (tagname != null && tagname != "") {
@@ -271,6 +301,4 @@ Template.Video.events({
     }
 });
 
-Template.Video.helpers({
-
-});
+Template.Video.helpers({});

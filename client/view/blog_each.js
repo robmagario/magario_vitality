@@ -1,7 +1,7 @@
-Template.myBlogShowBody.rendered = function() {
+Template.myBlogShowBody.rendered = function () {
     var SideComments, avatar, chosen_name, commentUser, existingComments, possible_names, post, ref, ref1, ref2, ref3, ref4, settings, sideComments, the_user;
-    Meteor.call('isBlogAuthorized', this.id, (function(_this) {
-        return function(err, authorized) {
+    Meteor.call('isBlogAuthorized', this.id, (function (_this) {
+        return function (err, authorized) {
             if (authorized) {
                 return Session.set('canEditPost', authorized);
             }
@@ -20,7 +20,7 @@ Template.myBlogShowBody.rendered = function() {
             the_user = Meteor.user();
             possible_names = [the_user.username, (ref = the_user.services) != null ? (ref1 = ref.google) != null ? ref1.name : void 0 : void 0, (ref2 = the_user.profile) != null ? ref2.name : void 0, (ref3 = the_user.emails) != null ? ref3[0].address : void 0];
             chosen_name = null;
-            possible_names.every(function(name) {
+            possible_names.every(function (name) {
                 if (name != null) {
                     if (typeof name === "string" && name.length > 0) {
                         chosen_name = name;
@@ -50,7 +50,7 @@ Template.myBlogShowBody.rendered = function() {
         existingComments = [];
         Comment.where({
             slug: Session.get('slug')
-        }).forEach(function(comment) {
+        }).forEach(function (comment) {
             var sec;
             comment.comment.id = comment._id;
             sec = _(existingComments).findWhere({
@@ -66,7 +66,7 @@ Template.myBlogShowBody.rendered = function() {
             }
         });
         sideComments = new SideComments('#commentable-area', commentUser, existingComments);
-        sideComments.on('commentPosted', function(comment) {
+        sideComments.on('commentPosted', function (comment) {
             var attrs, commentId;
             if (settings.allowAnonymous || Meteor.user()) {
                 attrs = {
@@ -91,7 +91,7 @@ Template.myBlogShowBody.rendered = function() {
                 });
             }
         });
-        sideComments.on('commentDeleted', function(comment) {
+        sideComments.on('commentDeleted', function (comment) {
             if (Meteor.user()) {
                 Comment.destroyAll(comment.id);
                 return sideComments.removeComment(comment.sectionId, comment.id);
@@ -112,7 +112,7 @@ Template.myBlogShowBody.rendered = function() {
         post = Post.first({
             slug: Router.current().params.slug
         });
-        $(window).resize(function() {
+        $(window).resize(function () {
             return Session.set("fullWidthFeaturedImage", $(window).width() < post.featuredImageWidth);
         });
         return $(window).trigger("resize");
@@ -120,7 +120,7 @@ Template.myBlogShowBody.rendered = function() {
 };
 
 Template.myBlogShowBody.events({
-    'click a#edit-post': function(event, template) {
+    'click a#edit-post': function (event, template) {
         var postId;
         event.preventDefault();
         postId = Post.first({
@@ -133,7 +133,7 @@ Template.myBlogShowBody.events({
 });
 
 Template.myBlogShowBody.helpers({
-    isAdmin: function() {
+    isAdmin: function () {
         return Session.get("canEditPost");
     }
 });

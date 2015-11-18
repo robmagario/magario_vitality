@@ -1,6 +1,6 @@
-FlowRouter.route( '/', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'Video'
 
@@ -9,9 +9,9 @@ FlowRouter.route( '/', {
 
 });
 
-FlowRouter.route( '/services', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/services', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'services'
 
@@ -20,9 +20,9 @@ FlowRouter.route( '/services', {
 
 });
 
-FlowRouter.route( '/process', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/process', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'process'
 
@@ -31,9 +31,9 @@ FlowRouter.route( '/process', {
 
 });
 
-FlowRouter.route( '/jp', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/jp', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'Video'
 
@@ -41,9 +41,9 @@ FlowRouter.route( '/jp', {
     },
 
 });
-FlowRouter.route( '/cn', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/cn', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'Video'
 
@@ -51,9 +51,9 @@ FlowRouter.route( '/cn', {
     },
 
 });
-FlowRouter.route( '/hk', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/hk', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'Video'
 
@@ -61,9 +61,9 @@ FlowRouter.route( '/hk', {
     },
 
 });
-FlowRouter.route( '/br', {
-    action: function() {
-        BlazeLayout.render( 'rootLayout', {
+FlowRouter.route('/br', {
+    action: function () {
+        BlazeLayout.render('rootLayout', {
             navbar: 'Navbar',
             main: 'Video'
 

@@ -4,50 +4,52 @@
 //                             //
 /////////////////////////////////
 
-@BlogPageBackground:      #EEEEEE;
-@BlogPageItemBackground:  #FFFFFF;
+@BlogPageBackground: #EEEEEE;
+@BlogPageItemBackground: #FFFFFF;
 @BlogPageItemBorderColor: #CCCCFF;
 @BlogPageItemBorderWidth: 5px;
 @BlogPageItemBorderStyle: dashed;
 
-
 // Blog
-.admin_logout{
-  right:  20px;
-  top:    20px;
+.admin_logout {
+  right: 20px;
+  top: 20px;
 }
+
 .blog_logo,
-.admin_logout{
-  z-index:  1;
+.admin_logout {
+  z-index: 1;
   position: absolute;
 }
-.blog_logo{
+
+.blog_logo {
   left: 10px;
-  top:  10px;
+  top: 10px;
 }
-.blog_page{
-  top:              0px;
-  width:            100%;
-  height:           100%;
-  position:         fixed;
+
+.blog_page {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
   background-color: @BlogPageBackground;
-  padding-top:      75px;
-  padding-left:     15%;
-  padding-right:    15%;
-  overflow-y:       scroll;
+  padding-top: 75px;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow-y: scroll;
   .post_item {
-    margin-top:       10px;
-    margin-bottom:    10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: @BlogPageItemBackground;
-    border-color:     @BlogPageItemBorderColor;
-    border-width:     @BlogPageItemBorderWidth;
-    border-style:     @BlogPageItemBorderStyle;
+    border-color: @BlogPageItemBorderColor;
+    border-width: @BlogPageItemBorderWidth;
+    border-style: @BlogPageItemBorderStyle;
     .post_item_content {
-      margin-left:  10px;
+      margin-left: 10px;
       margin-right: 10px;
     }
     .the-content {
-      padding-top:  20px;
+      padding-top: 20px;
     }
   }
 }
@@ -55,6 +57,7 @@
 .mediumInsert {
   margin-left: 0px !important;
 }
-.side-comment  {
+
+.side-comment {
   display: none;
 }

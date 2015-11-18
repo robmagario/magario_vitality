@@ -8,7 +8,7 @@ Helpers.Veriables = {
 };
 
 Helpers.Video = {
-    Load: function() {
+    Load: function () {
         $("header.video").wallpaper({
             source: {
                 poster: "/img/bg-mobile-fallback.jpg",
@@ -21,15 +21,15 @@ Helpers.Video = {
 // User for show log while testing
 Helpers.Log = {
     active: false,
-    Show: function(header, message) {
-        if(Helpers.Log.active) {
+    Show: function (header, message) {
+        if (Helpers.Log.active) {
             console.log("[" + header + "]: " + message);
         }
     }
 };
 
-Helpers.ChangeLanguage = function(_language) {
-    if(_language == 'en') {
+Helpers.ChangeLanguage = function (_language) {
+    if (_language == 'en') {
         //location.href('/');
         window.location.pathname = '';
     } else {
@@ -39,13 +39,13 @@ Helpers.ChangeLanguage = function(_language) {
     // TAPi18n.setLanguage(_language);
 }
 
-Helpers.ChangeNavbarBackground = function() {
+Helpers.ChangeNavbarBackground = function () {
     console.log(window.pageYOffset);
 }
 
-Helpers.UploadImage = function(_image) {
+Helpers.UploadImage = function (_image) {
     var _api = new imgur.Api("34ca6c098f1fe8ea400fea3a8b987ef6a220bd03");
-    _api.uploadUrl(_image, function(err, response){
+    _api.uploadUrl(_image, function (err, response) {
         if (err) {
             console.log(err);
         } else {

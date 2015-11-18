@@ -37,8 +37,10 @@ We create sleek and beautiful websites and send it to the world, from personal b
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Default Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+              rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet'
+              type='text/css'>
 
         <!-- Plugin CSS -->
         <link href="assets/css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
@@ -70,32 +72,40 @@ We create sleek and beautiful websites and send it to the world, from personal b
                 -o-background-size: cover;
                 padding: 100px 0;
             }
+
             .preview-pane {
                 text-align: center;
                 margin-bottom: 30px;
                 padding: 15px;
             }
+
             .preview-pane hr {
                 max-width: 50px;
                 margin: 5px auto;
             }
+
             .preview-pane a {
                 color: #222;
             }
+
             .preview-pane a:focus {
                 outline: none;
             }
+
             .preview-pane a img {
                 -webkit-transition: all 0.5s;
                 -moz-transition: all 0.5s;
                 transition: all 0.5s;
             }
+
             .preview-pane a:hover img {
                 opacity: 0.5;
             }
+
             .label-primary {
                 background-color: #EF4035;
             }
+
             .cta-list {
                 margin-top: 30px;
             }
@@ -109,6 +119,7 @@ We create sleek and beautiful websites and send it to the world, from personal b
         <div class="demo-header-content">
             <div class="container">
                 <img src="/img/magario/logo.png" class="img-responsive img-centered" style="padding-left:50px;" alt="">
+
                 <h1 class="hero-content">Magario</h1>
                 <hr class="colored">
                 <p class="hero-content">{{_ "BrandNameSubtext"}}</p>
@@ -125,7 +136,6 @@ We create sleek and beautiful websites and send it to the world, from personal b
     </div>
 
 
-
     <!-- Core Scripts -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
@@ -136,7 +146,7 @@ We create sleek and beautiful websites and send it to the world, from personal b
 
     <script>
         // Smooth Scrolling: Smooth scrolls to an ID on the current page.
-        $('a.page-scroll-demo').bind('click', function(event) {
+        $('a.page-scroll-demo').bind('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: ($($anchor.attr('href')).offset().top)

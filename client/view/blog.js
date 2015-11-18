@@ -2,8 +2,8 @@
  * Created by Dave on 5/13/2015.
  */
 
-Template.myBlogIndexTemplate.rendered = function() {
-    if(Meteor.user() != null) {
+Template.myBlogIndexTemplate.rendered = function () {
+    if (Meteor.user() != null) {
         $('.admin_logout').show();
     } else {
         $('.admin_logout').hide();
@@ -16,16 +16,16 @@ Template.myBlogIndexTemplate.rendered = function() {
 
 Template.myBlogIndexTemplate.events({
     // Admin Logout
-    'click .admin_logout': function() {
+    'click .admin_logout': function () {
         Meteor.logout();
         window.location.reload();
     }
 });
 
 Template.myBlogIndexTemplate.helpers({
-    UploadCallback: function() {
+    UploadCallback: function () {
         return {
-            finished: function(index, fileInfo, context) {
+            finished: function (index, fileInfo, context) {
                 console.log(index);
                 console.log(fileInfo);
                 console.log(context);
@@ -34,6 +34,6 @@ Template.myBlogIndexTemplate.helpers({
     }
 });
 
-Template.myShowBlogTemplate.rendered = function() {
-    $('#meteor-blog').css({'padding-top':'40px'});
+Template.myShowBlogTemplate.rendered = function () {
+    $('#meteor-blog').css({'padding-top': '40px'});
 };
