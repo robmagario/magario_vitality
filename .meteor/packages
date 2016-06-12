@@ -23,7 +23,6 @@ tap:i18n
 mrt:bootstrap-3
 tomi:upload-server
 tomi:upload-jquery
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -40,3 +39,5 @@ check
 kadira:flow-router
 kadira:blaze-layout
 okgrow:analytics
+standard-minifier-css
+standard-minifier-js
