@@ -41,5 +41,4 @@ standard-minifier-css
 standard-minifier-js
 flemay:less-autoprefixer
 meteorhacks:npm
-
 npm-container
