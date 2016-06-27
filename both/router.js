@@ -71,3 +71,22 @@ FlowRouter.route('/br', {
     },
 
 });
+
+// send 404 if route not defined
+if (Meteor.isServer) {
+    WebApp.connectHandlers.use("/", function(req, res, next) {
+        var isValidRoute = false;
+        for(var i=0; i<FlowRouter._routes.length; i++){
+            if (req.url == FlowRouter._routes[i].path) {
+                isValidRoute = true;
+                break;
+            }
+        }
+        if(isValidRoute) {
+            next();
+        } else {
+            res.writeHead(404);
+            res.end("Sorry, that page doesn't exist.");
+        }
+    });
+}
