@@ -68,7 +68,6 @@ mongo@1.1.9_1
 mongo-id@1.0.5
 natestrauser:font-awesome@4.6.3
 npm-bcrypt@0.8.6_1
-npm-container@1.2.0
 npm-mongo@1.4.44_1
 observe-sequence@1.0.12
 okgrow:analytics@0.4.3
